@@ -38,7 +38,7 @@ export default {
     
 }
 </script>
-  require('bootstrap-material-design')
+  // require('bootstrap-material-design')
 <style scoped>
 
 </style>
