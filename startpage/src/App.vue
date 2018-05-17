@@ -3,7 +3,8 @@
     <img src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <NavBar title="Startpage" />
-    <Card title="Cardy" description="This is my first card, it has a description." />
+    
+      <Card title="Cardy" description="This is my first card, it has a description." />
   </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
   components: {
     // HelloWorld
     NavBar,
-    Card
+    Card,
   }
 }
 </script>

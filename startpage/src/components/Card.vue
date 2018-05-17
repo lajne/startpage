@@ -20,7 +20,7 @@ export default {
     URL: String,
     iconURL: String,
     col: 4,
-    style: [
+    styles: [
     {
       backgroundColor: String,
       color: String,
@@ -33,7 +33,7 @@ export default {
 <style scoped>
 
 #card {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 </style>
