@@ -193,10 +193,7 @@ let Games = {
   ]
 }
 
+//let Items = {};
 let Items = [ HR , IT , Banks , Games ]
 
-//window["myData"] = Items;
-window["myData"] = "låååååång sträng";
-
-console.log("här här och skojar");
-console.log("datan: ", Items);
+window["myData"] = Items;

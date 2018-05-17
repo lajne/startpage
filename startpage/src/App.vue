@@ -9,6 +9,7 @@
 <script>
 import GetStartDef from './components/GetStartDef.vue'
 import NavBar from './components/NavBar.vue'
+import './components/data.js'
 
 
 

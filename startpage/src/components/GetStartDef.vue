@@ -1,32 +1,46 @@
 <template>
   <div class="hello">
-    {{ object }}
+    <!-- {{ object }} -->
 
   </div>
 </template>
 
 <script>
-import 'data.js';
 
 let getStartDef = function(callback) {
   setTimeout( () => {
-    let mydata = window["myData"];
+    let mydata =  window["myData"];
     console.log("hiiiit", mydata);
     callback(mydata);
   }, 2000);
 };
 
  getStartDef((data) => {
-  console.log("Fick data", data);
-  this.object = data;
+  console.log("Fick data", JSON.stringify(data, null, 2));
+  //Koppla datan vi får här med något vue-baserat.
+  //så vi kan visa eller använda något.
  });
 
 
 export default {
   name: 'GetStartDef',
+  // Tänker att man kan undatera detta object på något sätt
+  // i getStartDef funktionen.... 
   props: {
     object: Object
-  }
+  },
+  // created: 
+  // getStartDef = function(callback) {
+  //   setTimeout( () => {
+  //     let mydata =  window["myData"];
+  //     console.log("hiiiit", mydata);
+  //     callback(mydata);
+  //   }, 2000);
+  // }.then((data) => {
+  //   let self = this;
+  //   console.log("Fick data", JSON.stringify(data, null, 2));
+  //   self.object = data;
+  // })
 }
 </script>
 
