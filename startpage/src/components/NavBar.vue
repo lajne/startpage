@@ -33,12 +33,24 @@
   </nav>
 </template>
 
+
+
+
+
+
 <script>
 export default {
-    
+    name: 'NavBar',
+    props: {
+      
+    }
 }
 </script>
-  // require('bootstrap-material-design')
+
+
+
+
+
 <style scoped>
 
 </style>
