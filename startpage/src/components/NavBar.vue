@@ -1,7 +1,7 @@
 <template>
     <nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark indigo">
     <div class="container">
-      <a class="navbar-brand" href="#">Our Start Page</a>
+      <a class="navbar-brand" href="#">{{ title }}</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,7 +35,10 @@
 
 <script>
 export default {
-    
+  name: 'NavBar',
+  props: {
+    title: String,
+  }
 }
 </script>
   // require('bootstrap-material-design')

@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'mdbootstrap/css/mdb.css';
 
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);
