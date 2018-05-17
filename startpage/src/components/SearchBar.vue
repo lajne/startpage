@@ -17,7 +17,11 @@
 
 <script>
 export default {
-  
+  // name of js file (searchBar.js)
+  name: 'searchBar',
+  props: {
+
+  }
 }
 </script>
 

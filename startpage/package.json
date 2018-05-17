@@ -11,6 +11,7 @@
     "bootstrap": "^4.1.1",
     "bootstrap-material-design": "4.1.1",
     "bootstrap-vue": "^2.0.0-rc.9",
+    "callback-loader": "^0.2.4",
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "mdbootstrap": "^4.5.2",
