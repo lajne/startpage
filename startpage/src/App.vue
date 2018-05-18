@@ -19,7 +19,6 @@ import SearchBar from './components/SearchBar.vue'
 // has a child - Card.vue
 import Categories from './components/Categories.vue'
 import GetStartDef from './components/getStartDef.vue'
-import './components/data.js'
 
 export default {
   // name of js file (app.js)
