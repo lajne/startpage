@@ -5,6 +5,7 @@
     <SearchBar />    
     <Categories title="Category 1"/>
     <Categories title="Category 2"/>
+    <GetStartDef />
 
   </div>
 </template>

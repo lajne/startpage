@@ -1,53 +1,35 @@
 <template>
- <div class="hello">
-   {{ object }}
+  <div class="hello">
+    <ul id="v-for-object">
+      <li v-for="(cat, index) in categories" :key='index'>
+        <span>hej {{cat.title}}</span>
+      </li>
+    </ul>
  </div>
 </template>
 
 <script>
 
-// let getStartDef = function(callback) {
-//  setTimeout( () => {
-//    let mydata =  window["myData"];
-//    console.log("hiiiit", mydata);
-//    callback(mydata);
-//  }, 2000);
-// };
-
-// getStartDef((data) => {
-//  console.log("Fick data", JSON.stringify(data, null, 2));
-//  //Koppla datan vi får här med något vue-baserat.
-//  //så vi kan visa eller använda något.
-// });
-
-
 export default {
- name: 'GetStartDef',
- // Hur ska vi få den här metoden att exekveras?
- // 
- data: function() {
-   return {
-     object: {}
-   }
- },
+  name: 'GetStartDef',
+  created: function () {
+    this.fetchData();
+  },
+  data: function() {
+     return {
+       categories: []
+     }
+  },
   methods: {
     fetchData: function () {
       let self = this;
       setTimeout( () => {
-        let mydata = window["myData"];
-        console.log("HIT: ", mydata);
-      }, 2000)
-      .then(function (response) {
-        console.log("Fick datan: ", JSON.stringify(response, null, 2));
-        var jsondata = {};
-        jsondata = response;
-        self.object = jsondata;
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
+        let loadedData = window["myData"];
+        console.log("Fick datan: ", JSON.stringify(loadedData, null, 2));
+        self.categories = loadedData.cat;
+      }, 500)
     }
-  }
+  },
 }
 </script>
 
