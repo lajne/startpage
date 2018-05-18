@@ -2,10 +2,13 @@
   <div id="app">
 
     <NavBar />
-    <SearchBar />    
-    <Categories title="Category 1"/>
-    <Categories title="Category 2"/>
-    <GetStartDef />
+    <SearchBar />   
+    <b-card-group deck>
+      <Categories title="Category 1"/>
+      <Categories title="Category 2"/>
+      <Categories title="Category 3"/>
+      <GetStartDef />
+    </b-card-group>
 
   </div>
 </template>
