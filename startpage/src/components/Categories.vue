@@ -2,9 +2,9 @@
 
   <b-card-group deck>
     
-    <b-card :title="title">
-      <Card description="Human Resources" />
-      <Card description="Internet Technology" />
+    <b-card v-bind:title="cat.title">
+      <Card  />
+      <Card  />
     </b-card>
     
   </b-card-group>
@@ -22,8 +22,10 @@ export default {
     Card
   },
   props: {
-    title: String
+    title: String,
+    cat: Object
   },
+  
 }
 </script>
 

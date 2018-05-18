@@ -6,7 +6,7 @@
         <human-handsup-icon />
         <monitor-icon />
         <p class="card-text"> {{ description }} </p>
-      </b-card>
+      </b-card>      
     </a>
   </div>
 

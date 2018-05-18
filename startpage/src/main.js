@@ -8,8 +8,6 @@ import MontiorIcon from "vue-material-design-icons/monitor.vue"
 import WebIcon from "vue-material-design-icons/web.vue"
 import PuzzleIcon from "vue-material-design-icons/puzzle.vue"
 
-
-
 Vue.use(BootstrapVue);
 Vue.component("magnify-icon", MagnifyIcon);
 Vue.component("human-handsup-icon", HumanHandsupIcon);
