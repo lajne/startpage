@@ -7,17 +7,23 @@
     {
         "title": "Computer",
         "description": "Computer stuff",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     },
     {
         "title": "Mobile",
         "description": "You can't have an iPhone..",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     },
     {
         "title": "Internet",
         "description": "Try restarting the router..",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     }
     ]
 },
@@ -28,7 +34,9 @@
     {
         "title": "Feelings",
         "description": "Do you want to talk about it?",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     }
     ]
 },
@@ -39,12 +47,16 @@
     {
         "title": "Daniel Tabacskó",
         "description": "Amazing",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     },
     {
         "title": "Alexander Linné",
         "description": "Bodafors",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     }
     ]
 },
@@ -55,12 +67,16 @@
     {
         "title": "League of Legends",
         "description": "Best MOBA",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     },
     {
         "title": "Call of Duty 4",
         "description": "Best FPS ever",
-        "col": 6
+        "style": {
+          "col": 6
+        }
     }
     ]
 }

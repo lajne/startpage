@@ -3,8 +3,9 @@
   <b-card-group deck>
     
     <b-card :title="title">
-      <Card description="Human Resources" />
-      <Card description="Internet Technology" />
+      <!-- <Card description="Human Resources" />
+      <Card description="Internet Technology" /> -->
+      <Card v-for="(catarina, index) in cat" v-bind:key = "index" :catData="catarina" :title="catarina.title" :description="catarina.description"/>
     </b-card>
     
   </b-card-group>
@@ -22,7 +23,8 @@ export default {
     Card
   },
   props: {
-    title: String
+    title: String,
+    cat: Object
   },
 }
 </script>

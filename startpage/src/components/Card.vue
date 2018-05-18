@@ -2,14 +2,13 @@
 
   <div id="cardStyle">
     <a href="#">
-      <b-card :title="title">
+      <b-card v-for="(catarina, index) in card" v-bind:key = "index" :title="catarina.title">
         <human-handsup-icon />
         <monitor-icon />
-        <p class="card-text"> {{ description }} </p>
+        <p class="card-text" :description="catarina.description"></p>
       </b-card>
     </a>
   </div>
-
 </template>
 
 <script>
@@ -30,7 +29,8 @@ export default {
         backgroundColor: String,
         color: String,
       }
-    ]
+    ],
+    card: Object
   }
 }
 </script>

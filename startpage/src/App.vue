@@ -4,10 +4,7 @@
     <NavBar />
     <SearchBar />   
     <b-card-group deck>
-      <Categories title="Category 1"/>
-      <Categories title="Category 2"/>
-      <Categories title="Category 3"/>
-      <GetStartDef />
+      <Categories v-for="(cat, index) in categories" v-bind:key = "index" :catData="cat" :title="cat.title"/>
     </b-card-group>
 
   </div>
@@ -18,7 +15,7 @@ import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 // has a child - Card.vue
 import Categories from './components/Categories.vue'
-import GetStartDef from './components/getStartDef.vue'
+import JSONObject from './data2.JSON'
 
 export default {
   // name of js file (app.js)
@@ -27,7 +24,25 @@ export default {
     NavBar,
     SearchBar,
     Categories,
-    GetStartDef
+  },
+  created: function () {
+    this.fetchData();
+  },
+  data: function () {
+    return {
+      categories: []
+    }
+  },
+  methods: {
+    fetchData: function () {
+      let self = this;
+      setTimeout( () => {
+        let loadedData = JSONObject;
+        //console.log("Fick datan: ", JSON.stringify(loadedData, null, 2));
+        self.categories = loadedData.Categories;
+        //console.log("Props of getStartDef: ", self.categories)
+      }, 500)
+    },
   }
 }
 </script>
