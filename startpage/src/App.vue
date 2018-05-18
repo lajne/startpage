@@ -2,13 +2,11 @@
   <div id="app">
 
     <NavBar />
-    <SearchBar />   
-    <b-card-group deck>
-      <Categories title="Category 1"/>
-      <Categories title="Category 2"/>
-      <Categories title="Category 3"/>
-      <GetStartDef />
-    </b-card-group>
+    <SearchBar />
+
+    <!-- <b-card-group deck> -->
+    <Categories v-for="(category, index) in categories" v-bind:key="index" v-bind:cat="category" v-bind:title="category.title" />
+    <!-- </b-card-group> -->
 
   </div>
 </template>
@@ -16,19 +14,37 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
-// has a child - Card.vue
 import Categories from './components/Categories.vue'
-import GetStartDef from './components/getStartDef.vue'
+import GetStartDef from './components/GetStartDef.vue'
+import JSONObject from './components/data2.JSON'
 
 export default {
-  // name of js file (app.js)
   name: 'app',
   components: {
     NavBar,
     SearchBar,
     Categories,
-    GetStartDef
-  }
+    JSONObject
+  },
+  created: function () {
+    this.fetchData();
+  },
+  data: function() {
+     return {
+       item: [ {'item1': 'item11'}, {'item1': 'item22'}],
+       categories: []
+     }
+  },
+  methods: {
+    fetchData: function () {
+      let self = this;
+      setTimeout( () => {
+        let loadedData = JSONObject;
+        self.categories = loadedData.Categories;
+        console.log("Props of GetStartDef: ", self.categories)
+      }, 500)
+    }
+  },
 }
 </script>
 
@@ -39,5 +55,4 @@ export default {
   width: 100%;
   padding: 70px 25px;
 }
-
 </style>

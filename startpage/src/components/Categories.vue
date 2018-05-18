@@ -1,13 +1,15 @@
 <template>
 
+   
   <b-card-group deck>
     
-    <b-card :title="title">
-      <Card description="Human Resources" />
-      <Card description="Internet Technology" />
+    <b-card v-bind:title="cat.title">
+      <Card  v-for="(card, index) in cat.cards" v-bind:key="index" v-bind:title="card.title" />
     </b-card>
     
   </b-card-group>
+        
+  
 
 </template>
 
@@ -22,8 +24,10 @@ export default {
     Card
   },
   props: {
-    title: String
+    title: String,
+    cat: Object
   },
+  
 }
 </script>
 
