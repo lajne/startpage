@@ -5,6 +5,8 @@
     <SearchBar />    
     <Categories title="Category 1"/>
     <Categories title="Category 2"/>
+    <Categories title="Category 3"/>
+
 
   </div>
 </template>
