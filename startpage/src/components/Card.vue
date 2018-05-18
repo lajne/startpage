@@ -1,14 +1,16 @@
 <template>
 
+
   <div id="cardStyle">
     <a href="#">
-      <b-card :title="title">
-        <human-handsup-icon />
+      <b-card  >
+        <!-- <human-handsup-icon /> -->
         <monitor-icon />
-        <p class="card-text"> {{ description }} </p>
+        <p class="card-text"> {{ title }} </p>
       </b-card>      
     </a>
   </div>
+
 
 </template>
 
@@ -31,6 +33,7 @@ export default {
         color: String,
       }
     ]
+   
   }
 }
 </script>
