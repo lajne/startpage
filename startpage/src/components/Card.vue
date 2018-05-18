@@ -1,10 +1,11 @@
 <template>
 
-  <div id="card">
+  <div id="cardStyle">
     <a href="#">
       <b-card :title="title">
+        <human-handsup-icon />
+        <monitor-icon />
         <p class="card-text"> {{ description }} </p>
-        <!-- <b-button href="#" variant="primary">Card Link</b-button> -->
       </b-card>
     </a>
   </div>
@@ -16,6 +17,8 @@
 export default {
   // name of js file (card.js)
   name: 'Card',
+  components: {
+  },
   props: {
     title: String,
     description: String,
@@ -33,7 +36,7 @@ export default {
 </script>
 
 <style scoped>
-#card {
+#cardStyle {
   /* max-width: 300px; */
   text-align: center;
 }
