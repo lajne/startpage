@@ -1,8 +1,15 @@
 <template>
 
-<b-navbar class="fixed-top" toggleable="md" type="dark" variant="info">
+
+<!-- type="dark" for white Navbar text -->
+<!-- change 'variant' prop for Navbar background color -->
+<b-navbar class="fixed-top" toggleable="md" variant="light">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand href="#">NavBar</b-navbar-brand>
+  <b-navbar-brand href="#">
+    <web-icon />
+    <!-- <img src="https://placekitten.com/g/30/30" alt="Super Site">&nbsp;&nbsp; -->
+    NavBar
+  </b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
     <!-- Right aligned nav items (class='ml-auto') -->
     <b-navbar-nav class="ml-auto">
@@ -28,12 +35,15 @@
 
 <script>
 
-
 export default {
     name: 'NavBar',
+    components: {
+      
+    },
     props: {
       
     }
+    
 }
 </script>
 
