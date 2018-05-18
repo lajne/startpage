@@ -7,6 +7,7 @@
       <Categories title="Category 1"/>
       <Categories title="Category 2"/>
       <Categories title="Category 3"/>
+      <GetStartDef />
     </b-card-group>
 
   </div>
@@ -17,6 +18,8 @@ import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 // has a child - Card.vue
 import Categories from './components/Categories.vue'
+import GetStartDef from './components/getStartDef.vue'
+import './components/data.js'
 
 export default {
   // name of js file (app.js)
@@ -24,7 +27,8 @@ export default {
   components: {
     NavBar,
     SearchBar,
-    Categories
+    Categories,
+    GetStartDef
   }
 }
 </script>
