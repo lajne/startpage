@@ -1,41 +1,40 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
     <NavBar />
-    <GetStartDef />
+    <SearchBar />    
+    <Categories title="Category 1"/>
+    <Categories title="Category 2"/>
+
   </div>
 </template>
 
 <script>
-import GetStartDef from './components/GetStartDef.vue'
 import NavBar from './components/NavBar.vue'
+import SearchBar from './components/SearchBar.vue'
+// has a child - Card.vue
+import Categories from './components/Categories.vue'
+import GetStartDef from './components/getStartDef.vue'
 import './components/data.js'
 
-
-
 export default {
+  // name of js file (app.js)
   name: 'app',
   components: {
-    GetStartDef,
-    NavBar
+    NavBar,
+    SearchBar,
+    Categories,
+    GetStartDef
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: white; 
+  display: table;
+  width: 100%;
+  padding: 70px 25px;
 }
 
-body {
-background-color: lightgrey;
-display: table;
-width: 100%;
-padding: 70px 25px;
-}
 </style>

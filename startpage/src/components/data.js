@@ -193,7 +193,6 @@ let Games = {
   ]
 }
 
-//let Items = {};
 let Items = [ HR , IT , Banks , Games ]
 
 window["myData"] = Items;
