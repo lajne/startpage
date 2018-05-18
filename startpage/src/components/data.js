@@ -197,4 +197,4 @@ let Items = { cat: [ HR , IT , Banks , Games ] }
 
 window["myData"] = Items;
 
-console.log(JSON.stringify(Items, null, 2));
+// console.log(JSON.stringify(Items, null, 2));
