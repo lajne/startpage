@@ -1,6 +1,6 @@
 <template>
 
-
+<b-col>
   <div id="cardStyle">
     <a href="#">
       <b-card  >
@@ -10,7 +10,7 @@
       </b-card>      
     </a>
   </div>
-
+</b-col>
 
 </template>
 

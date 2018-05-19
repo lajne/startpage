@@ -1,15 +1,17 @@
 <template>
 
-   
-  <b-card-group deck>
     
-    <b-card v-bind:title="cat.title">
-      <Card  v-for="(card, index) in cat.cards" v-bind:key="index" v-bind:title="card.title" />
-    </b-card>
     
-  </b-card-group>
-        
-  
+<b-col cols="6">
+  <b-card v-bind:title="cat.title">
+
+    <b-row>
+    <Card  v-for="(card, index) in cat.cards" v-bind:key="index" v-bind:title="card.title" />
+    </b-row>
+
+  </b-card>
+</b-col>
+
 
 </template>
 

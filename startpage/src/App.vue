@@ -4,9 +4,13 @@
     <NavBar />
     <SearchBar />
 
-    <!-- <b-card-group deck> -->
-    <Categories v-for="(category, index) in categories" v-bind:key="index" v-bind:cat="category" v-bind:title="category.title" />
-    <!-- </b-card-group> -->
+  
+    <div class="container-fluid">
+      <b-row>
+        <Categories v-for="(category, index) in categories" v-bind:key="index" v-bind:cat="category" v-bind:title="category.title" />
+      </b-row>
+    </div>
+
 
   </div>
 </template>
