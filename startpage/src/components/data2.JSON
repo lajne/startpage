@@ -7,17 +7,26 @@
     {
         "title": "Computer",
         "description": "Computer stuff",
-        "col": 6
+        "col": "col-4",
+        "style": {
+          "backgroundColor": "#fc5c65"
+        }
     },
     {
         "title": "Mobile",
         "description": "You can't have an iPhone..",
-        "col": 6
+        "col": "col-4",
+        "style": {
+          "backgroundColor": "#fd9644"
+        }
     },
     {
         "title": "Internet",
         "description": "Try restarting the router..",
-        "col": 6
+        "col": "col-4",
+        "style": {
+          "backgroundColor": "#fed330"
+        }
     }
     ]
 },
@@ -28,7 +37,10 @@
     {
         "title": "Feelings",
         "description": "Do you want to talk about it?",
-        "col": 6
+        "col": "col-12",
+        "style": {
+          "backgroundColor": "#26de81"
+        }
     }
     ]
 },
@@ -39,12 +51,18 @@
     {
         "title": "Daniel Tabacskó",
         "description": "Amazing",
-        "col": 6
+        "col": "col-6",
+        "style": {
+          "backgroundColor": "#2bcbba"
+        }
     },
     {
         "title": "Alexander Linné",
         "description": "Bodafors",
-        "col": 6
+        "col": "col-6",
+        "style": {
+          "backgroundColor": "#eb3b5a"
+        }
     }
     ]
 },
@@ -55,12 +73,18 @@
     {
         "title": "League of Legends",
         "description": "Best MOBA",
-        "col": 6
+        "col": "col-6",
+        "style": {
+          "backgroundColor": "#fa8231"
+        }
     },
     {
         "title": "Call of Duty 4",
         "description": "Best FPS ever",
-        "col": 6
+        "col": "col-6",
+        "style": {
+          "backgroundColor": "#20bf6b"
+        }
     }
     ]
 }

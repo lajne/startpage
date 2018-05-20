@@ -3,7 +3,7 @@
 
   <div id="cardStyle">
     <a href="#">
-      <b-card  >
+      <b-card :style="styles" :class="col">
         <!-- <human-handsup-icon /> -->
         <monitor-icon />
         <p class="card-text"> {{ title }} </p>
@@ -19,21 +19,13 @@
 export default {
   // name of js file (card.js)
   name: 'Card',
-  components: {
-  },
   props: {
     title: String,
     description: String,
     URL: String,
     iconURL: String,
-    col: 6,
-    styles: [
-      {
-        backgroundColor: String,
-        color: String,
-      }
-    ]
-   
+    col: String,
+    styles: {}
   }
 }
 </script>

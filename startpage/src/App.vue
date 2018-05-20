@@ -4,9 +4,9 @@
     <NavBar />
     <SearchBar />
 
-    <!-- <b-card-group deck> -->
-    <Categories v-for="(category, index) in categories" v-bind:key="index" v-bind:cat="category" v-bind:title="category.title" />
-    <!-- </b-card-group> -->
+    <b-card-group deck >
+      <Categories v-for="(category, index) in categories" v-bind:key="index" v-bind:cat="category" v-bind:title="category.title"  class="col-6"/>
+    </b-card-group>
 
   </div>
 </template>
@@ -15,7 +15,6 @@
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
-import GetStartDef from './components/GetStartDef.vue'
 import JSONObject from './components/data2.JSON'
 
 export default {
@@ -31,7 +30,6 @@ export default {
   },
   data: function() {
      return {
-       item: [ {'item1': 'item11'}, {'item1': 'item22'}],
        categories: []
      }
   },
@@ -41,7 +39,6 @@ export default {
       setTimeout( () => {
         let loadedData = JSONObject;
         self.categories = loadedData.Categories;
-        console.log("Props of GetStartDef: ", self.categories)
       }, 500)
     }
   },
