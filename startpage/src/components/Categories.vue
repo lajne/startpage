@@ -5,7 +5,11 @@
     <b-card :title="title">
       <!-- <Card description="Human Resources" />
       <Card description="Internet Technology" /> -->
-      <Card v-for="(catarina, index) in cat" v-bind:key = "index" :catData="catarina" :title="catarina.title" :description="catarina.description"/>
+      <!-- <Card v-for="(catarina, index) in cat" v-bind:key = "index" :catData="catarina" :title="catarina.title" :description="catarina.description"/> -->
+      <!-- <b-card-group deck> -->
+        <Card v-for="(card, index) in catData.cards" v-bind:key = "index" :title="card.title" :description="card.description" />
+        <!-- v-for="(cat, index) in categories" v-bind:key = "index" :catData="cat" -->
+      <!-- </b-card-group> -->
     </b-card>
     
   </b-card-group>
@@ -24,7 +28,7 @@ export default {
   },
   props: {
     title: String,
-    cat: Object
+    catData: Object
   },
 }
 </script>
