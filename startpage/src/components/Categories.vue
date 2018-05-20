@@ -1,7 +1,7 @@
 <template>
 
    
-  <b-card-group deck>
+  <b-card-group>
     
     <b-card v-bind:title="cat.title">
       <Card  v-for="(card, index) in cat.cards" v-bind:key="index" v-bind:title="card.title" :col="card.col" :styles="card.style" />
@@ -27,7 +27,6 @@ export default {
     title: String,
     cat: Object
   },
-  
 }
 </script>
 
