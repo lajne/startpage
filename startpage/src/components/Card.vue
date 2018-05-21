@@ -1,6 +1,4 @@
 <template>
-
-
 <b-col v-bind:class="colStyle">
   <div id="cardStyle">
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
@@ -10,18 +8,16 @@
         text-variant="white">
         <!-- <human-handsup-icon /> -->
         <monitor-icon />
+        <!-- <b-img  src="https://picsum.photos/1024/400/?image=41" fluid></b-img> -->
         <p class="white-text">{{ title }}</p>
       </b-card>      
     </a>
   </div>
 </b-col>
-
 </template>
 
 <script>
-
 export default {
-  // name of js file (card.js)
   name: 'Card',
   props: {
     title: String,
@@ -37,19 +33,6 @@ export default {
 
 <style scoped>
 #cardStyle {
-  /* max-width: 300px; */
   text-align: center;
 }
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-}
-/* .col-centered {
-    display: inline-block;
-    margin:auto;
-    
-} */
 </style>

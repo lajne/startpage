@@ -12,7 +12,7 @@
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
-            "backgroundColor": "#1EB980"
+            "backgroundColor": "#00897b"
           }
       },
       { 
@@ -23,7 +23,7 @@
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
-            "backgroundColor": "#1EB980"
+            "backgroundColor": "#00897b"
           }
       },
       {
@@ -34,18 +34,7 @@
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
-            "backgroundColor": "#1EB980"
-          }
-      },
-      {
-          "title": "Mobile",
-          "description": "You can't have an iPhone..",
-          "URL": "#",
-          "imageUrl": "#",
-          "col": 4,
-          "colStyle": "col-sm-12",
-          "style": {
-            "backgroundColor": "#1EB980"
+            "backgroundColor": "#00897b"
           }
       }
       ]
@@ -62,7 +51,7 @@
           "col": 12,
           "colStyle": "col-sm-12",
           "style": {
-            "backgroundColor": "#ff6859"
+            "backgroundColor": "#f9a825"
           }
       },
       {
@@ -101,20 +90,9 @@
       ]
   },
   {
-      "title": "Engineers",
+      "title": "Students",
       "description": "Insanely talented engineers in the world",
       "cards": [
-      {
-          "title": "Daniel Tabacskó",
-          "description": "Amazing",
-          "URL": "#",
-          "imageUrl": "#",
-          "col": 6,
-          "colStyle": "col-sm-6",
-          "style": {
-            "backgroundColor": "#ffcf44"
-          }
-      },
       {
           "title": "Alexander Linné",
           "description": "Bodafors",
@@ -123,7 +101,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#ffcf44"
+            "backgroundColor": "#e53935"
           }
       },
       {
@@ -131,12 +109,23 @@
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
-        "col": 4,
+        "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#ffcf44"
+          "backgroundColor": "#e53935"
         }
       },
+      {
+        "title": "Daniel Tabacskó",
+        "description": "Amazing",
+        "URL": "#",
+        "imageUrl": "#",
+        "col": 12,
+        "colStyle": "col-sm-12",
+        "style": {
+          "backgroundColor": "#e53935"
+        }
+    },
       {
         "title": "Timmie Bark",
         "description": "Amazing",
@@ -145,7 +134,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#ffcf44"
+          "backgroundColor": "#e53935"
         }
       },
       {
@@ -156,7 +145,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#ffcf44"
+          "backgroundColor": "#e53935"
         }
       }
       ]
@@ -173,7 +162,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#b15dff"
+            "backgroundColor": "#f4511e"
           }
       },
       {
@@ -184,18 +173,18 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#b15dff"
+            "backgroundColor": "#f4511e"
           }
       },
       {
-          "title": "Call of Duty x2000",
+          "title": "Call of Duty 4",
           "description": "Best FPS ever",
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#b15dff"
+            "backgroundColor": "#f4511e"
           }
       }
       ]

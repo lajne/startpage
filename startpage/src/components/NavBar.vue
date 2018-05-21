@@ -3,7 +3,7 @@
 
 <!-- type="dark" for white Navbar text -->
 <!-- change 'variant' prop for Navbar background color -->
-<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark" >
+<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#">
     <web-icon />
@@ -13,25 +13,12 @@
   <b-collapse is-nav id="nav_collapse">
     <!-- Right aligned nav items (class='ml-auto') -->
     <b-navbar-nav class="ml-auto">
-      <!-- <b-nav-item href="#" disabled>Disabled link</b-nav-item>
-      <b-nav-item-dropdown text="Categories" right>
-        <b-dropdown-item href="#">Lights</b-dropdown-item>
-        <b-dropdown-item href="#">Camera</b-dropdown-item>
-        <b-dropdown-item href="#">Action</b-dropdown-item>
-      </b-nav-item-dropdown> -->
       <b-nav-item href="#">About</b-nav-item>
     </b-navbar-nav>
   </b-collapse>
 </b-navbar>
 
-
-
 </template>
-
-
-
-
-
 
 <script>
 
@@ -47,14 +34,10 @@ export default {
 }
 </script>
 
-
-
-
-
 <style scoped>
 
 #navbar {
-  background-color: #37474f;
+  background-color: #7986cb;
   color: #ffffff;
 }
 
