@@ -1,13 +1,10 @@
 <template>
-
   <div class="container">
     <div class="md-form">
-      <input type="text" class="form-control animated bounce" id="searchInput" 
-             mdbInputDirective autofocus placeholder="Search" @focus="bounce">
+      <input type="text" class="form-control animated" id="searchInput" 
+             mdbInputDirective autofocus placeholder="Search">
     </div>
   </div>
-
-
 </template>
 
 
@@ -35,8 +32,12 @@ export default {
 }
 
 #searchInput:focus {
-  height: 29px;
-  margin-bottom: -2px;
+  animation-name: focus-animation;
+  animation-duration: 0.3s;
+}
+
+@keyframes focus-animation {
+  100% {transform: scale(1.04)}
 }
 
 </style>
