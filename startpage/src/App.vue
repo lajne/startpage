@@ -14,7 +14,6 @@
       </b-row>
     </div>
 
-
   </div>
 </template>
 
@@ -33,7 +32,7 @@ export default {
     JSONObject
   },
   created: function () {
-    this.fetchData();
+    this.getStartDef();
   },
   data: function() {
      return {
@@ -41,13 +40,12 @@ export default {
      }
   },
   methods: {
-    fetchData: function () {
+    getStartDef: function () {
       let self = this;
       setTimeout( () => {
         let loadedData = JSONObject;
         self.categories = loadedData.Categories;
-        // console.log(self.categories)
-      }, 500)
+      }, 1)
     }
   }
 }
@@ -55,7 +53,7 @@ export default {
 
 <style>
 #app {
-  background-color: #f5f5f5;
+  background-color: #62727b;
   display: table;
   width: 100%;
   padding: 70px 25px;

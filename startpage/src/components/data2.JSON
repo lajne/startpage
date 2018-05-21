@@ -12,7 +12,7 @@
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#1EB980"
           }
       },
       { 
@@ -23,7 +23,7 @@
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#1EB980"
           }
       },
       {
@@ -34,7 +34,7 @@
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#1EB980"
           }
       },
       {
@@ -43,9 +43,9 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 4,
-          "colStyle": "col-sm-4",
+          "colStyle": "col-sm-12",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#1EB980"
           }
       }
       ]
@@ -62,9 +62,42 @@
           "col": 12,
           "colStyle": "col-sm-12",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#ff6859"
           }
+      },
+      {
+        "title": "Feelings",
+        "description": "Do you want to talk about it?",
+        "URL": "#",
+        "imageUrl": "#",
+        "col": 12,
+        "colStyle": "col-sm-12",
+        "style": {
+          "backgroundColor": "#ff6859"
+        }
+    },
+    {
+      "title": "Feelings",
+      "description": "Do you want to talk about it?",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "colStyle": "col-sm-12",
+      "style": {
+        "backgroundColor": "#ff6859"
       }
+  },
+  {
+    "title": "Feelings",
+    "description": "Do you want to talk about it?",
+    "URL": "#",
+    "imageUrl": "#",
+    "col": 12,
+    "colStyle": "col-sm-12",
+    "style": {
+      "backgroundColor": "#ff6859"
+    }
+}
       ]
   },
   {
@@ -79,7 +112,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#ffcf44"
           }
       },
       {
@@ -90,7 +123,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#ffcf44"
           }
       },
       {
@@ -99,9 +132,9 @@
         "URL": "#",
         "imageUrl": "#",
         "col": 4,
-        "colStyle": "col-sm-4",
+        "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#00bfa5"
+          "backgroundColor": "#ffcf44"
         }
       },
       {
@@ -112,7 +145,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#00bfa5"
+          "backgroundColor": "#ffcf44"
         }
       },
       {
@@ -123,7 +156,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#00bfa5"
+          "backgroundColor": "#ffcf44"
         }
       }
       ]
@@ -140,7 +173,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#b15dff"
           }
       },
       {
@@ -151,7 +184,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#b15dff"
           }
       },
       {
@@ -162,136 +195,10 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#00bfa5"
+            "backgroundColor": "#b15dff"
           }
       }
       ]
-  },
-
-
-
-
-
-
-
-
-
-  {
-    "title": "IT",
-    "description": "All about IT",
-    "cards": [
-    {
-        "title": "Computer",
-        "description": "Computer stuff",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 4,
-        "colStyle": "col-sm-4",
-        "style": {
-          "backgroundColor": "#00bfa5"
-        }
-    },
-    {
-        "title": "Mobile",
-        "description": "You can't have an iPhone..",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 4,
-        "colStyle": "col-sm-4",
-        "style": {
-          "backgroundColor": "#00bfa5"
-        }
-    },
-    {
-        "title": "Internet",
-        "description": "Try restarting the router..",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 4,
-        "colStyle": "col-sm-4",
-        "style": {
-          "backgroundColor": "#00bfa5"
-        }
-    }
-    ]
-},
-
-
-{
-  "title": "Engineers",
-  "description": "Insanely talented engineers in the world",
-  "cards": [
-  {
-      "title": "Daniel Tabacskó",
-      "description": "Amazing",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 6,
-      "colStyle": "col-sm-6",
-      "style": {
-        "backgroundColor": "#00bfa5"
-      }
-  },
-  {
-      "title": "Alexander Linné",
-      "description": "Bodafors",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 6,
-      "colStyle": "col-sm-6",
-      "style": {
-        "backgroundColor": "#00bfa5"
-      }
-  },
-  {
-    "title": "Mallory Fraiche",
-    "description": "Amazing",
-    "URL": "#",
-    "imageUrl": "#",
-    "col": 4,
-    "colStyle": "col-sm-4",
-    "style": {
-      "backgroundColor": "#00bfa5"
-    }
-  },
-  {
-    "title": "Mallory Fraiche",
-    "description": "Amazing",
-    "URL": "#",
-    "imageUrl": "#",
-    "col": 6,
-    "colStyle": "col-sm-6",
-    "style": {
-      "backgroundColor": "#00bfa5"
-    }
-  },
-  {
-    "title": "Mallory Fraiche",
-    "description": "Amazing",
-    "URL": "#",
-    "imageUrl": "#",
-    "col": 4,
-    "colStyle": "col-sm-4",
-    "style": {
-      "backgroundColor": "#00bfa5"
-    }
-  },
-  {
-    "title": "Mallory Fraiche",
-    "description": "Amazing",
-    "URL": "#",
-    "imageUrl": "#",
-    "col": 12,
-    "colStyle": "col-sm-12",
-    "style": {
-      "backgroundColor": "#00bfa5"
-    }
   }
-  ]
-}
-
-
-
-
   ]
   }
