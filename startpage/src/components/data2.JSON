@@ -7,7 +7,10 @@
     {
         "title": "Computer",
         "description": "Computer stuff",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-4",
+        "col-style": "",
         "style": {
           "backgroundColor": "#fc5c65"
         }
@@ -15,7 +18,10 @@
     {
         "title": "Mobile",
         "description": "You can't have an iPhone..",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-4",
+        "col-style": "",
         "style": {
           "backgroundColor": "#fd9644"
         }
@@ -23,7 +29,10 @@
     {
         "title": "Internet",
         "description": "Try restarting the router..",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-4",
+        "col-style": "",
         "style": {
           "backgroundColor": "#fed330"
         }
@@ -37,7 +46,10 @@
     {
         "title": "Feelings",
         "description": "Do you want to talk about it?",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-12",
+        "col-style": "",
         "style": {
           "backgroundColor": "#26de81"
         }
@@ -51,7 +63,10 @@
     {
         "title": "Daniel Tabacskó",
         "description": "Amazing",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-6",
+        "col-style": "",
         "style": {
           "backgroundColor": "#2bcbba"
         }
@@ -59,7 +74,10 @@
     {
         "title": "Alexander Linné",
         "description": "Bodafors",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-6",
+        "col-style": "",
         "style": {
           "backgroundColor": "#eb3b5a"
         }
@@ -73,7 +91,10 @@
     {
         "title": "League of Legends",
         "description": "Best MOBA",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-6",
+        "col-style": "",
         "style": {
           "backgroundColor": "#fa8231"
         }
@@ -81,7 +102,10 @@
     {
         "title": "Call of Duty 4",
         "description": "Best FPS ever",
+        "URL": "#",
+        "iconURL": "#",
         "col": "col-6",
+        "col-style": "",
         "style": {
           "backgroundColor": "#20bf6b"
         }
