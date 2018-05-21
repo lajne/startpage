@@ -3,7 +3,7 @@
 
 <!-- type="dark" for white Navbar text -->
 <!-- change 'variant' prop for Navbar background color -->
-<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark" variant="primary">
+<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#">
     <web-icon />
@@ -54,7 +54,7 @@ export default {
 <style scoped>
 
 #navbar {
-  background-color: #448aff;
+  background-color: #7986cb;
   color: #ffffff;
 }
 
