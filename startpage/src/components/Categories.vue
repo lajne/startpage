@@ -2,7 +2,7 @@
 
 <b-col class="col-12 col-sm-12 col-lg-6">
 
-  <b-card class="mt-4" id="b-card">
+  <b-card class="mt-4 animated slideInUp" id="b-card">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
     <!-- can change this rows class to adjust the cards... justify-content-md-center for example -->
     <b-row class="justify-content-between">

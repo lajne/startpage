@@ -58,6 +58,7 @@ export default {
   background-color: #f5f5f5;
   display: table;
   width: 100%;
+  height: 100vh;
   padding: 70px 25px;
 }
 </style>
