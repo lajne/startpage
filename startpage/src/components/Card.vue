@@ -3,7 +3,7 @@
 
 <b-col v-bind:class="colStyle">
   <div id="cardStyle">
-    <a href="#">
+    <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
       <b-card class="mt-3">
         <!-- <human-handsup-icon /> -->
         <monitor-icon />
