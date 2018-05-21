@@ -1,8 +1,8 @@
 <template>
 
-<b-col class="col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<b-col class="col-12 col-sm-12 col-lg-6">
 
-  <b-card class="mt-4">
+  <b-card class="mt-4" id="b-card">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
     <!-- can change this rows class to adjust the cards... justify-content-md-center for example -->
     <b-row class="justify-content-between">
@@ -11,7 +11,8 @@
               v-bind:title="card.title" 
               v-bind:col="card.col" 
               v-bind:colStyle="card.colStyle"
-              v-bind:description="card.description" />
+              v-bind:description="card.description" 
+              v-bind:styles="card.style"/>
     </b-row>
   </b-card>
 
@@ -51,6 +52,9 @@ export default {
   text-align: center;
   font-weight: 500;
   font-size: larger;
+}
+#b-card {
+  background-color: #b2dfdb;
 }
 
 </style>

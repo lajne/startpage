@@ -18,6 +18,7 @@ Vue.component("puzzle-icon", PuzzleIcon);
 import 'bootstrap/dist/css/bootstrap.css';
 import 'mdbootstrap/css/mdb.css';
 import 'vue-material-design-icons/styles.css';
+import 'vue2-animate/dist/vue2-animate.min.css';
 
 Vue.config.productionTip = false
 
