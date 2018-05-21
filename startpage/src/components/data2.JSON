@@ -8,7 +8,7 @@
           "title": "Computer",
           "description": "Computer stuff",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "",
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
@@ -19,7 +19,7 @@
           "title": "Mobile",
           "description": "You can't have an iPhone..",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
@@ -30,7 +30,7 @@
           "title": "Internet",
           "description": "Try restarting the router..",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
@@ -41,7 +41,7 @@
           "title": "Mobile",
           "description": "You can't have an iPhone..",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
@@ -58,7 +58,7 @@
           "title": "Feelings",
           "description": "Do you want to talk about it?",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 12,
           "colStyle": "col-sm-12",
           "style": {
@@ -75,7 +75,7 @@
           "title": "Daniel Tabacskó",
           "description": "Amazing",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
@@ -86,7 +86,7 @@
           "title": "Alexander Linné",
           "description": "Bodafors",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
@@ -97,7 +97,7 @@
         "title": "Mallory Fraiche",
         "description": "Amazing",
         "URL": "#",
-        "iconURL": "#",
+        "imageUrl": "#",
         "col": 4,
         "colStyle": "col-sm-4",
         "style": {
@@ -108,7 +108,7 @@
         "title": "Timmie Bark",
         "description": "Amazing",
         "URL": "#",
-        "iconURL": "#",
+        "imageUrl": "#",
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
@@ -119,7 +119,7 @@
         "title": "Mattias Jarl",
         "description": "Amazing",
         "URL": "#",
-        "iconURL": "#",
+        "imageUrl": "#",
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
@@ -136,7 +136,7 @@
           "title": "League of Legends",
           "description": "Best MOBA",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
@@ -147,7 +147,7 @@
           "title": "Super Mario Brothers",
           "description": "Best FPS ever",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
@@ -158,7 +158,7 @@
           "title": "Call of Duty x2000",
           "description": "Best FPS ever",
           "URL": "#",
-          "iconURL": "#",
+          "imageUrl": "#",
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
@@ -184,7 +184,7 @@
         "title": "Computer",
         "description": "Computer stuff",
         "URL": "#",
-        "iconURL": "#",
+        "imageUrl": "#",
         "col": 4,
         "colStyle": "col-sm-4",
         "style": {
@@ -195,7 +195,7 @@
         "title": "Mobile",
         "description": "You can't have an iPhone..",
         "URL": "#",
-        "iconURL": "#",
+        "imageUrl": "#",
         "col": 4,
         "colStyle": "col-sm-4",
         "style": {
@@ -206,7 +206,7 @@
         "title": "Internet",
         "description": "Try restarting the router..",
         "URL": "#",
-        "iconURL": "#",
+        "imageUrl": "#",
         "col": 4,
         "colStyle": "col-sm-4",
         "style": {
@@ -225,7 +225,7 @@
       "title": "Daniel Tabacskó",
       "description": "Amazing",
       "URL": "#",
-      "iconURL": "#",
+      "imageUrl": "#",
       "col": 6,
       "colStyle": "col-sm-6",
       "style": {
@@ -236,7 +236,7 @@
       "title": "Alexander Linné",
       "description": "Bodafors",
       "URL": "#",
-      "iconURL": "#",
+      "imageUrl": "#",
       "col": 6,
       "colStyle": "col-sm-6",
       "style": {
@@ -247,7 +247,7 @@
     "title": "Mallory Fraiche",
     "description": "Amazing",
     "URL": "#",
-    "iconURL": "#",
+    "imageUrl": "#",
     "col": 4,
     "colStyle": "col-sm-4",
     "style": {
@@ -258,7 +258,7 @@
     "title": "Mallory Fraiche",
     "description": "Amazing",
     "URL": "#",
-    "iconURL": "#",
+    "imageUrl": "#",
     "col": 6,
     "colStyle": "col-sm-6",
     "style": {
@@ -269,7 +269,7 @@
     "title": "Mallory Fraiche",
     "description": "Amazing",
     "URL": "#",
-    "iconURL": "#",
+    "imageUrl": "#",
     "col": 4,
     "colStyle": "col-sm-4",
     "style": {
@@ -280,7 +280,7 @@
     "title": "Mallory Fraiche",
     "description": "Amazing",
     "URL": "#",
-    "iconURL": "#",
+    "imageUrl": "#",
     "col": 12,
     "colStyle": "col-sm-12",
     "style": {
