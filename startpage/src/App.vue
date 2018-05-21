@@ -5,7 +5,12 @@
     <SearchBar />
 
     <b-card-group deck >
-      <Categories v-for="(category, index) in categories" v-bind:key="index" v-bind:cat="category" v-bind:title="category.title"  class="col-6"/>
+      <Categories v-for="(category, index) in categories"
+                    :key="index"
+                    :cat="category"
+                    :title="category.title"
+                    class="col-6"
+                    :description="category.description"/>
     </b-card-group>
 
   </div>

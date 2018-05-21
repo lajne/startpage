@@ -6,7 +6,7 @@
     "cards": [
     {
         "title": "Computer",
-        "description": "Computer stuff",
+        "description": "Description about computers",
         "URL": "#",
         "iconURL": "#",
         "col": "col-4",
@@ -17,7 +17,7 @@
     },
     {
         "title": "Mobile",
-        "description": "You can't have an iPhone..",
+        "description": "Description about mobiles",
         "URL": "#",
         "iconURL": "#",
         "col": "col-4",
@@ -28,7 +28,7 @@
     },
     {
         "title": "Internet",
-        "description": "Try restarting the router..",
+        "description": "Description about the internet",
         "URL": "#",
         "iconURL": "#",
         "col": "col-4",
@@ -41,11 +41,11 @@
 },
 {
     "title": "HR",
-    "description": "Human stuff",
+    "description": "Human Resources",
     "cards": [
     {
         "title": "Feelings",
-        "description": "Do you want to talk about it?",
+        "description": "Description about feelings",
         "URL": "#",
         "iconURL": "#",
         "col": "col-12",
@@ -62,7 +62,7 @@
     "cards": [
     {
         "title": "Daniel Tabacskó",
-        "description": "Amazing",
+        "description": "Description about Daniel",
         "URL": "#",
         "iconURL": "#",
         "col": "col-6",
@@ -73,7 +73,7 @@
     },
     {
         "title": "Alexander Linné",
-        "description": "Bodafors",
+        "description": "Description about Alexander",
         "URL": "#",
         "iconURL": "#",
         "col": "col-6",
@@ -90,7 +90,7 @@
     "cards": [
     {
         "title": "League of Legends",
-        "description": "Best MOBA",
+        "description": "Description about League of Legends",
         "URL": "#",
         "iconURL": "#",
         "col": "col-6",
@@ -101,7 +101,7 @@
     },
     {
         "title": "Call of Duty 4",
-        "description": "Best FPS ever",
+        "description": "Description about Cod 4",
         "URL": "#",
         "iconURL": "#",
         "col": "col-6",

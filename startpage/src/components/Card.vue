@@ -1,7 +1,8 @@
 <template>
 
   <div id="cardStyle">
-    <a href="#">
+    <a href="#" v-b-tooltip.html.bottom 
+                :title="description">
       <b-card :style="styles" :class="col">
         <!-- <human-handsup-icon /> -->
         <monitor-icon />
