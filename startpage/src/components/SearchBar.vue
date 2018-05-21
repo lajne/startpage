@@ -2,8 +2,8 @@
 
   <div class="container">
     <div class="md-form">
-    <input type="text" class="form-control" id="searchBox" mdbInputDirective>
-    <label for="searchBox"><span class="md-suffix"><magnify-icon /></span></label>
+      <input type="text" class="form-control animated bounce" id="searchInput" 
+             mdbInputDirective autofocus placeholder="Search" @focus="bounce">
     </div>
   </div>
 
@@ -27,5 +27,16 @@ export default {
 
 
 <style scoped>
+#searchInput {
+  background-color: #ffffff;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 27px;
+}
+
+#searchInput:focus {
+  height: 29px;
+  margin-bottom: -2px;
+}
 
 </style>

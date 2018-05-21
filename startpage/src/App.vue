@@ -55,7 +55,7 @@ export default {
 
 <style>
 #app {
-  background-color: white; 
+  background-color: #f5f5f5;
   display: table;
   width: 100%;
   padding: 70px 25px;
