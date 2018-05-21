@@ -1,68 +1,297 @@
 {
-"Categories" : [ 
-{
+  "Categories" : [ 
+  {
+      "title": "IT",
+      "description": "All about IT",
+      "cards": [
+      {
+          "title": "Computer",
+          "description": "Computer stuff",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 4,
+          "colStyle": "col-sm-4",
+          "style": {
+            "backgroundColor": "#fc5c65"
+          }
+      },
+      {
+          "title": "Mobile",
+          "description": "You can't have an iPhone..",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 4,
+          "colStyle": "col-sm-4",
+          "style": {
+            "backgroundColor": "#fd9644"
+          }
+      },
+      {
+          "title": "Internet",
+          "description": "Try restarting the router..",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 4,
+          "colStyle": "col-sm-4",
+          "style": {
+            "backgroundColor": "#fed330"
+          }
+      },
+      {
+          "title": "Mobile",
+          "description": "You can't have an iPhone..",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 4,
+          "colStyle": "col-sm-4",
+          "style": {
+            "backgroundColor": "#fd9644"
+          }
+      }
+      ]
+  },
+  {
+      "title": "HR",
+      "description": "Human stuff",
+      "cards": [
+      {
+          "title": "Feelings",
+          "description": "Do you want to talk about it?",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 12,
+          "colStyle": "col-sm-12",
+          "style": {
+            "backgroundColor": "#26de81"
+          }
+      }
+      ]
+  },
+  {
+      "title": "Engineers",
+      "description": "Insanely talented engineers in the world",
+      "cards": [
+      {
+          "title": "Daniel Tabacskó",
+          "description": "Amazing",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#2bcbba"
+          }
+      },
+      {
+          "title": "Alexander Linné",
+          "description": "Bodafors",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#eb3b5a"
+          }
+      },
+      {
+        "title": "Mallory Fraiche",
+        "description": "Amazing",
+        "URL": "#",
+        "iconURL": "#",
+        "col": 4,
+        "colStyle": "col-sm-4",
+        "style": {
+          "backgroundColor": "#2bcbba"
+        }
+      },
+      {
+        "title": "Timmie Bark",
+        "description": "Amazing",
+        "URL": "#",
+        "iconURL": "#",
+        "col": 6,
+        "colStyle": "col-sm-6",
+        "style": {
+          "backgroundColor": "#2bcbba"
+        }
+      },
+      {
+        "title": "Mattias Jarl",
+        "description": "Amazing",
+        "URL": "#",
+        "iconURL": "#",
+        "col": 6,
+        "colStyle": "col-sm-6",
+        "style": {
+          "backgroundColor": "#2bcbba"
+        }
+      }
+      ]
+  },
+  {
+      "title": "Games",
+      "description": "The best games in the world atm",
+      "cards": [
+      {
+          "title": "League of Legends",
+          "description": "Best MOBA",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#fa8231"
+          }
+      },
+      {
+          "title": "Super Mario Brothers",
+          "description": "Best FPS ever",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#20bf6b"
+          }
+      },
+      {
+          "title": "Call of Duty x2000",
+          "description": "Best FPS ever",
+          "URL": "#",
+          "iconURL": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#20bf6b"
+          }
+      }
+      ]
+  },
+
+
+
+
+
+
+
+
+
+  {
     "title": "IT",
     "description": "All about IT",
     "cards": [
     {
         "title": "Computer",
         "description": "Computer stuff",
-        "col": 6
+        "URL": "#",
+        "iconURL": "#",
+        "col": 4,
+        "colStyle": "col-sm-4",
+        "style": {
+          "backgroundColor": "#fc5c65"
+        }
     },
     {
         "title": "Mobile",
         "description": "You can't have an iPhone..",
-        "col": 6
+        "URL": "#",
+        "iconURL": "#",
+        "col": 4,
+        "colStyle": "col-sm-4",
+        "style": {
+          "backgroundColor": "#fd9644"
+        }
     },
     {
         "title": "Internet",
         "description": "Try restarting the router..",
-        "col": 6
+        "URL": "#",
+        "iconURL": "#",
+        "col": 4,
+        "colStyle": "col-sm-4",
+        "style": {
+          "backgroundColor": "#fed330"
+        }
     }
     ]
 },
+
+
 {
-    "title": "HR",
-    "description": "Human stuff",
-    "cards": [
-    {
-        "title": "Feelings",
-        "description": "Do you want to talk about it?",
-        "col": 6
+  "title": "Engineers",
+  "description": "Insanely talented engineers in the world",
+  "cards": [
+  {
+      "title": "Daniel Tabacskó",
+      "description": "Amazing",
+      "URL": "#",
+      "iconURL": "#",
+      "col": 6,
+      "colStyle": "col-sm-6",
+      "style": {
+        "backgroundColor": "#2bcbba"
+      }
+  },
+  {
+      "title": "Alexander Linné",
+      "description": "Bodafors",
+      "URL": "#",
+      "iconURL": "#",
+      "col": 6,
+      "colStyle": "col-sm-6",
+      "style": {
+        "backgroundColor": "#eb3b5a"
+      }
+  },
+  {
+    "title": "Mallory Fraiche",
+    "description": "Amazing",
+    "URL": "#",
+    "iconURL": "#",
+    "col": 4,
+    "colStyle": "col-sm-4",
+    "style": {
+      "backgroundColor": "#2bcbba"
     }
-    ]
-},
-{
-    "title": "Engineers",
-    "description": "Insanely talented engineers in the world",
-    "cards": [
-    {
-        "title": "Daniel Tabacskó",
-        "description": "Amazing",
-        "col": 6
-    },
-    {
-        "title": "Alexander Linné",
-        "description": "Bodafors",
-        "col": 6
+  },
+  {
+    "title": "Mallory Fraiche",
+    "description": "Amazing",
+    "URL": "#",
+    "iconURL": "#",
+    "col": 6,
+    "colStyle": "col-sm-6",
+    "style": {
+      "backgroundColor": "#2bcbba"
     }
-    ]
-},
-{
-    "title": "Games",
-    "description": "The best games in the world atm",
-    "cards": [
-    {
-        "title": "League of Legends",
-        "description": "Best MOBA",
-        "col": 6
-    },
-    {
-        "title": "Call of Duty 4",
-        "description": "Best FPS ever",
-        "col": 6
+  },
+  {
+    "title": "Mallory Fraiche",
+    "description": "Amazing",
+    "URL": "#",
+    "iconURL": "#",
+    "col": 4,
+    "colStyle": "col-sm-4",
+    "style": {
+      "backgroundColor": "#2bcbba"
     }
-    ]
+  },
+  {
+    "title": "Mallory Fraiche",
+    "description": "Amazing",
+    "URL": "#",
+    "iconURL": "#",
+    "col": 12,
+    "colStyle": "col-sm-12",
+    "style": {
+      "backgroundColor": "#2bcbba"
+    }
+  }
+  ]
 }
-]
-}
+
+
+
+
+  ]
+  }
