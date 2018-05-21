@@ -15,7 +15,7 @@
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
-import GetStartDef from './components/GetStartDef.vue'
+// import GetStartDef from './components/GetStartDef.vue'
 import JSONObject from './components/data2.JSON'
 
 export default {
@@ -50,7 +50,7 @@ export default {
 
 <style>
 #app {
-  background-color: white; 
+  background-color: #f5f5f5;
   display: table;
   width: 100%;
   padding: 70px 25px;

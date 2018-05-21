@@ -1,9 +1,12 @@
 <template>
 
   <div class="container">
+    <!-- <label for="searchBox"><span class="md-suffix"><magnify-icon /></span></label> -->
     <div class="md-form">
-    <input type="text" class="form-control" id="searchBox" mdbInputDirective>
-    <label for="searchBox"><span class="md-suffix"><magnify-icon /></span></label>
+      <transition name="focus">
+      <input type="text" class="form-control animated bounce" id="searchInput" 
+             mdbInputDirective autofocus placeholder="Search" @focus="bounce">
+    </transition>
     </div>
   </div>
 
@@ -19,7 +22,25 @@ export default {
   name: 'searchBar',
   props: {
 
-  }
+  },
+  // methods: {
+  //   focus() {
+  //     console.log("I'm in focus");
+  //     // animationName = "bounceIn"
+  //     // el.style.animationDuration = "1.5"
+      
+
+  //   }
+  // },
+  // directives: {
+  // focus: {
+  //   // directive definition
+  //   inserted: function (el) {
+  //     el.focus()
+  //     console.log("in focus")
+  //   }
+  // }
+  // }
 }
 </script>
 
@@ -27,5 +48,15 @@ export default {
 
 
 <style scoped>
+#searchInput {
+  background-color: #ffffff;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 27px;
+}
+
+input:focus {
+  background-size: 100% 2px, 100% 1px;
+}
 
 </style>
