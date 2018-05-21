@@ -7,9 +7,6 @@
   </div>
 </template>
 
-
-
-
 <script>
 export default {
   name: 'searchBar',
@@ -18,9 +15,6 @@ export default {
   }
 }
 </script>
-
-
-
 
 <style scoped>
 #searchInput {
