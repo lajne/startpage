@@ -4,14 +4,16 @@
     <NavBar />
     <SearchBar />
 
-    <b-card-group deck >
-      <Categories v-for="(category, index) in categories"
-                    :key="index"
-                    :cat="category"
-                    :title="category.title"
-                    class="col-6"
-                    :description="category.description"/>
-    </b-card-group>
+    <div class="container-fluid">
+      <b-row>
+        <Categories v-for="(category, index) in categories" 
+                      v-bind:key="index" 
+                      v-bind:cat="category" 
+                      v-bind:title="category.title" 
+                      v-bind:description="category.description" />
+      </b-row>
+    </div>
+
 
   </div>
 </template>
@@ -44,9 +46,10 @@ export default {
       setTimeout( () => {
         let loadedData = JSONObject;
         self.categories = loadedData.Categories;
+        console.log(self.categories)
       }, 500)
     }
-  },
+  }
 }
 </script>
 
