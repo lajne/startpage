@@ -46,7 +46,7 @@ export default {
       setTimeout( () => {
         let loadedData = JSONObject;
         self.categories = loadedData.Categories;
-        console.log(self.categories)
+        // console.log(self.categories)
       }, 500)
     }
   }

@@ -4,15 +4,17 @@
 <b-col v-bind:class="colStyle">
   <div id="cardStyle">
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
-      <b-card class="mt-3">
+      <b-card
+        class="mt-3" 
+        :style="styles"
+        text-variant="white">
         <!-- <human-handsup-icon /> -->
         <monitor-icon />
-        <p class="card-text">{{ title }}</p>
+        <p class="white-text">{{ title }}</p>
       </b-card>      
     </a>
   </div>
 </b-col>
-
 
 </template>
 
@@ -21,8 +23,6 @@
 export default {
   // name of js file (card.js)
   name: 'Card',
-  components: {
-  },
   props: {
     title: String,
     description: String,
@@ -30,13 +30,7 @@ export default {
     imageUrl: String,
     col: Number,
     colStyle: String,
-    styles: [
-      {
-        backgroundColor: String,
-        color: String,
-      }
-    ]
-   
+    styles: {}
   }
 }
 </script>
