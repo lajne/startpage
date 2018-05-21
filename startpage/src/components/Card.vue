@@ -27,7 +27,7 @@ export default {
     title: String,
     description: String,
     URL: String,
-    iconURL: String,
+    imageUrl: String,
     col: Number,
     colStyle: String,
     styles: [
@@ -45,6 +45,13 @@ export default {
 #cardStyle {
   /* max-width: 300px; */
   text-align: center;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
 }
 /* .col-centered {
     display: inline-block;

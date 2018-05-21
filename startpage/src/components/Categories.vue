@@ -1,6 +1,6 @@
 <template>
 
-<b-col class="col-xs-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<b-col class="col-12 col-sm-12 col-lg-6">
 
   <b-card class="mt-4">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
