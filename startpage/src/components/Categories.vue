@@ -5,7 +5,7 @@
     <b-card :title="title">
       <!-- <Card description="Human Resources" />
       <Card description="Internet Technology" /> -->
-      <Card v-for="(catarina, index) in cat" v-bind:key = "index" :catData="catarina" :title="catarina.title" :description="catarina.description"/>
+      <Card v-for="(card, index) in catData.cards" :key = "index" :title="card.title" :description="card.description"/>
     </b-card>
     
   </b-card-group>
@@ -24,7 +24,7 @@ export default {
   },
   props: {
     title: String,
-    cat: Object
+    catData: Array
   },
 }
 </script>

@@ -4,7 +4,7 @@
     <NavBar />
     <SearchBar />   
     <b-card-group deck>
-      <Categories v-for="(cat, index) in categories" v-bind:key = "index" :catData="cat" :title="cat.title"/>
+      <Categories v-for="(cat, index) in categories" :key = "index" :catData="cat" :title="cat.title"/>
     </b-card-group>
 
   </div>
