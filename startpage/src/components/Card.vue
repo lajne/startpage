@@ -3,11 +3,10 @@
   <div id="cardStyle">
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
       <b-card
-        class="mt-3" 
+        class="mt-2" 
         v-bind:style="styles"
         text-variant="white">
-        <monitor-icon />
-        <p class="white-text">{{ title }}</p>
+        <p class="white-text card-text"><monitor-icon />&nbsp;&nbsp;&nbsp;{{ title }}</p>
       </b-card>      
     </a>
   </div>
