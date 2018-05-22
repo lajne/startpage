@@ -4,7 +4,7 @@
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
       <b-card
         class="mt-3" 
-        :style="styles"
+        v-bind:style="styles"
         text-variant="white">
         <!-- <human-handsup-icon /> -->
         <monitor-icon />
