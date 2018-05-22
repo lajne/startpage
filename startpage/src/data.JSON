@@ -36,7 +36,18 @@
           "style": {
             "backgroundColor": "#00897b"
           }
-      }
+      },
+      {
+        "title": "Computer",
+        "description": "Computer stuff",
+        "URL": "#",
+        "imageUrl": "",
+        "col": 4,
+        "colStyle": "col-sm-4",
+        "style": {
+          "backgroundColor": "#00897b"
+        }
+    }
       ]
   },
   {

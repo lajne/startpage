@@ -8,8 +8,8 @@
         text-variant="white">
         <!-- <monitor-icon />
         <headphones-icon /> -->
-        <span v-if="showFunction"><headphones-icon /></span>
-        <span v-else-if="headphonesIcon"></span>
+        <headphones-icon />
+        
         <p class="white-text">{{ title }}</p>
       </b-card>      
     </a>
@@ -28,15 +28,7 @@ export default {
     col: Number,
     colStyle: String,
     styles: {}
-  },
-  data() {
-    return {
-      showFunction: false,
-      headphonesIcon: "hello!"
-      
-    }
   }
-
 }
 </script>
 
