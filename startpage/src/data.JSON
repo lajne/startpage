@@ -6,17 +6,20 @@
       "cards": [
       {
           "title": "Computer",
-          "description": "Computer stuff",
+          "short-description": "Computer stuff",
+          "description": "Computer stuff and a lot more text",
           "URL": "#",
           "imageUrl": "",
           "col": 4,
           "colStyle": "col-sm-4",
           "style": {
             "backgroundColor": "#00897b"
-          }
+          },
+          "tags": ["Computer", "IT"]
       },
       { 
           "title": "Mobile",
+          "short-description": "Mobile stuff",
           "description": "You can't have an iPhone..",
           "URL": "#",
           "imageUrl": "#",
@@ -24,10 +27,12 @@
           "colStyle": "col-sm-4",
           "style": {
             "backgroundColor": "#00897b"
-          }
+          },
+          "tags": ["Mobile", "IT", "iPhone"]
       },
       {
           "title": "Internet",
+          "short-description": "Internet stuff",
           "description": "Try restarting the router..",
           "URL": "#",
           "imageUrl": "#",
@@ -35,7 +40,8 @@
           "colStyle": "col-sm-4",
           "style": {
             "backgroundColor": "#00897b"
-          }
+          },
+          "tags": ["Web", "wifi"]
       }
       ]
   },
@@ -45,6 +51,7 @@
       "cards": [
       {
           "title": "Feelings",
+          "short-description": "Feelings stuff",
           "description": "Do you want to talk about it?",
           "URL": "#",
           "imageUrl": "#",
@@ -52,7 +59,8 @@
           "colStyle": "col-sm-12",
           "style": {
             "backgroundColor": "#2196F3"
-          }
+          },
+          "tags": ["red"]
       }
       ]
   },
@@ -62,6 +70,7 @@
       "cards": [
       {
           "title": "Alexander Linné",
+          "short-description": "Long hair",
           "description": "Bodafors",
           "URL": "#",
           "imageUrl": "#",
@@ -69,10 +78,12 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#ef5350"
-          }
+          },
+          "tags": ["Bodafors"]
       },
       {
         "title": "Mallory Fraiche",
+        "short-description": "Made in USA",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -84,6 +95,7 @@
       },
       {
         "title": "Daniel Tabacskó",
+        "short-description": "Cool",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -91,10 +103,12 @@
         "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["Anderstorp", "blonde", "amazing"]
     },
       {
         "title": "Timmie Bark",
+        "short-description": "Forsheda",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -102,10 +116,12 @@
         "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["webdav"]
       },
       {
         "title": "Mattias Jarl",
+        "short-description": "Many kids",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -113,7 +129,8 @@
         "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["NHL"]
       }
       ]
   },
@@ -123,6 +140,7 @@
       "cards": [
       {
           "title": "League of Legends",
+          "Short-description": "yo",
           "description": "Best MOBA",
           "URL": "#",
           "imageUrl": "#",
@@ -130,10 +148,12 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
-          }
+          },
+          "tags": ["Moba"]
       },
       {
           "title": "Super Mario Brothers",
+          "Short-description": "Old",
           "description": "Best FPS ever",
           "URL": "#",
           "imageUrl": "#",
@@ -141,10 +161,12 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
-          }
+          },
+          "tags": []
       },
       {
           "title": "Call of Duty 4",
+          "short-description": "R.I.P",
           "description": "Best FPS ever",
           "URL": "#",
           "imageUrl": "#",
@@ -152,7 +174,53 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
-          }
+          },
+          "tags": ["2007"]
+      }
+      ]
+  },
+  {
+      "title": "Operating systems",
+      "description": "Computer OS:s",
+      "cards": [
+      {
+          "title": "Mac OS",
+          "short-description": "Best OS",
+          "description": "Amazing Amazing Amazing Amazing",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 12,
+          "colStyle": "col-sm-12",
+          "style": {
+              "backgroundColor": "#AB47BC"
+          },
+          "tags": ["nice", "beautiful", "nix"]
+      },
+      {
+          "title": "Linux",
+          "short-description": "difficult",
+          "description": "A really good OS",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#AB47BC"
+          },
+          "tags": ["customize, nix"]
+      },
+      {
+          "title": "Windows",
+          "short-description": "terrible",
+          "description": "Locked down system with an outdated terminal",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#AB47BC"
+          },
+          "tags": ["microsoft", "corporate", "ugly"]
       }
       ]
   }
