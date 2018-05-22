@@ -4,12 +4,12 @@
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
     <b-row class="justify-content-between">
       <Card v-for="(card, index) in cat.cards" 
-              v-bind:key="index" 
-              v-bind:title="card.title" 
-              v-bind:col="card.col" 
-              v-bind:colStyle="card.colStyle"
-              v-bind:description="card.description" 
-              v-bind:styles="card.style" />
+            v-bind:key="index" 
+            v-bind:title="card.title" 
+            v-bind:col="card.col" 
+            v-bind:colStyle="card.colStyle"
+            v-bind:description="card.description" 
+            v-bind:styles="card.style" />
     </b-row>
   </b-card>
 </b-col>

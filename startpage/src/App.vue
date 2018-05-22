@@ -5,10 +5,10 @@
     <div class="container-fluid">
       <b-row>
         <Categories v-for="(category, index) in categories" 
-                      v-bind:key="index" 
-                      v-bind:cat="category" 
-                      v-bind:title="category.title" 
-                      v-bind:description="category.description" />
+                    v-bind:key="index" 
+                    v-bind:cat="category" 
+                    v-bind:title="category.title" 
+                    v-bind:description="category.description" />
       </b-row>
     </div>
   </div>
