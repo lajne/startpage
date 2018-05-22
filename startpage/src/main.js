@@ -7,6 +7,7 @@ import HumanHandsupIcon from "vue-material-design-icons/human-handsup.vue"
 import MontiorIcon from "vue-material-design-icons/monitor.vue"
 import WebIcon from "vue-material-design-icons/web.vue"
 import PuzzleIcon from "vue-material-design-icons/puzzle.vue"
+import HeadphonesIcon from "vue-material-design-icons/headphones.vue"
 
 Vue.use(BootstrapVue);
 Vue.component("magnify-icon", MagnifyIcon);
@@ -14,6 +15,7 @@ Vue.component("human-handsup-icon", HumanHandsupIcon);
 Vue.component("monitor-icon", MontiorIcon);
 Vue.component("web-icon", WebIcon);
 Vue.component("puzzle-icon", PuzzleIcon);
+Vue.component("headphones-icon", HeadphonesIcon);
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'mdbootstrap/css/mdb.css';

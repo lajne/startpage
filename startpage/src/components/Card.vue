@@ -6,9 +6,10 @@
         class="mt-3" 
         :style="styles"
         text-variant="white">
-        <!-- <human-handsup-icon /> -->
-        <monitor-icon />
-        <!-- <b-img  src="https://picsum.photos/1024/400/?image=41" fluid></b-img> -->
+        <!-- <monitor-icon />
+        <headphones-icon /> -->
+        <span v-if="showFunction"><headphones-icon /></span>
+        <span v-else-if="headphonesIcon"></span>
         <p class="white-text">{{ title }}</p>
       </b-card>      
     </a>
@@ -27,7 +28,15 @@ export default {
     col: Number,
     colStyle: String,
     styles: {}
+  },
+  data() {
+    return {
+      showFunction: false,
+      headphonesIcon: "hello!"
+      
+    }
   }
+
 }
 </script>
 
