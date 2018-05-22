@@ -6,10 +6,7 @@
         class="mt-3" 
         v-bind:style="styles"
         text-variant="white">
-        <!-- <monitor-icon />
-        <headphones-icon /> -->
-        <headphones-icon />
-        
+        <monitor-icon />
         <p class="white-text">{{ title }}</p>
       </b-card>      
     </a>

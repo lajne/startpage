@@ -62,7 +62,7 @@
           "col": 12,
           "colStyle": "col-sm-12",
           "style": {
-            "backgroundColor": "#f9a825"
+            "backgroundColor": "#2196F3"
           }
       }
       ]
@@ -79,7 +79,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#e53935"
+            "backgroundColor": "#ef5350"
           }
       },
       {
@@ -90,7 +90,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#e53935"
+          "backgroundColor": "#ef5350"
         }
       },
       {
@@ -101,7 +101,7 @@
         "col": 12,
         "colStyle": "col-sm-12",
         "style": {
-          "backgroundColor": "#e53935"
+          "backgroundColor": "#ef5350"
         }
     },
       {
@@ -112,7 +112,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#e53935"
+          "backgroundColor": "#ef5350"
         }
       },
       {
@@ -123,7 +123,7 @@
         "col": 6,
         "colStyle": "col-sm-6",
         "style": {
-          "backgroundColor": "#e53935"
+          "backgroundColor": "#ef5350"
         }
       }
       ]
@@ -140,7 +140,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#f4511e"
+            "backgroundColor": "#283593"
           }
       },
       {
@@ -151,7 +151,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#f4511e"
+            "backgroundColor": "#283593"
           }
       },
       {
@@ -162,7 +162,7 @@
           "col": 6,
           "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#f4511e"
+            "backgroundColor": "#283593"
           }
       }
       ]
