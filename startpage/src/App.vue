@@ -18,14 +18,13 @@
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
-import JSONObject from './components/data2.JSON'
+import loadedData from './data.JSON'
 export default {
   name: 'app',
   components: {
     NavBar,
     SearchBar,
     Categories,
-    JSONObject
   },
   created: function () {
     this.getStartDef();
@@ -39,9 +38,8 @@ export default {
     getStartDef: function () {
       let self = this;
       setTimeout( () => {
-        let loadedData = JSONObject;
         self.categories = loadedData.Categories;
-      }, 1)
+      }, 500)
     }
   }
 }
@@ -49,7 +47,7 @@ export default {
 
 <style>
 #app {
-  background-color: #62727b;
+  background-color: #f5f5f5;
   display: table;
   width: 100%;
   height: 100vh;

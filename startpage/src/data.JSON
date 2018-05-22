@@ -53,40 +53,7 @@
           "style": {
             "backgroundColor": "#f9a825"
           }
-      },
-      {
-        "title": "Feelings",
-        "description": "Do you want to talk about it?",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 12,
-        "colStyle": "col-sm-12",
-        "style": {
-          "backgroundColor": "#ff6859"
-        }
-    },
-    {
-      "title": "Feelings",
-      "description": "Do you want to talk about it?",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 12,
-      "colStyle": "col-sm-12",
-      "style": {
-        "backgroundColor": "#ff6859"
       }
-  },
-  {
-    "title": "Feelings",
-    "description": "Do you want to talk about it?",
-    "URL": "#",
-    "imageUrl": "#",
-    "col": 12,
-    "colStyle": "col-sm-12",
-    "style": {
-      "backgroundColor": "#ff6859"
-    }
-}
       ]
   },
   {
