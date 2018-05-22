@@ -6,9 +6,7 @@
         class="mt-3" 
         v-bind:style="styles"
         text-variant="white">
-        <!-- <human-handsup-icon /> -->
         <monitor-icon />
-        <!-- <b-img  src="https://picsum.photos/1024/400/?image=41" fluid></b-img> -->
         <p class="white-text">{{ title }}</p>
       </b-card>      
     </a>
