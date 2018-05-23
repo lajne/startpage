@@ -15,6 +15,7 @@
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "mdbootstrap": "^4.5.2",
+    "style-loader": "^0.21.0",
     "vue": "^2.5.16",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-material-design-icons": "^1.4.0",
@@ -24,6 +25,8 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
     "@vue/cli-service": "^3.0.0-beta.10",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.13",
     "webpack": "^4.8.3",
     "webpack-dev-server": "^3.1.4"
