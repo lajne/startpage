@@ -4,7 +4,7 @@
 <!-- <b-col class="col-12 col-sm-12 col-lg-6"> -->
   <b-card class="mt-2 animated slideInUp" id="b-card">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
-    <b-row class="justify-content-between">
+    <b-row>
       <Card v-for="(card, index) in filteredCards" 
             v-bind:key="index" 
             v-bind:title="card.title" 

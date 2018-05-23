@@ -4,14 +4,14 @@
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
 
       <b-card
-        class="mt-2" 
+        class="mt-1" 
         v-bind:style="styles"
         text-variant="white">
         <!-- <div class="card-body"> -->
           <div id="testing">
-            <button type="button" class="btn btn-sm btn-secondary">
+            <!-- <button type="button" class="btn btn-sm btn-secondary"> -->
               <monitor-icon />
-            </button>
+            <!-- </button> -->
           </div>
           <blockquote class="mb-2">
             <p class="card-title">{{ title }}</p>
