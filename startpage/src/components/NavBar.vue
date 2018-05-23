@@ -31,13 +31,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-// @import "./assets/_custom.scss";
-
-
-#navbar {
-  // background-color: $primary-color !important;
-  color: #ffffff;
-}
+<style scoped>
 
 </style>

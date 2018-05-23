@@ -1,6 +1,8 @@
+//Overrides
 $theme-colors: (
-  "primary": rgb(219, 161, 27),
+  "primary": #7986CB,
   "danger": #ff4136
 );
 
-$primary-color: #ff4136;
+//Custom created color used for accents on the site
+$accent: #7986CB;
