@@ -297,45 +297,6 @@
       }
     }
     ]
-},
-{
-    "title": "Games",
-    "description": "The best games in the world atm",
-    "cards": [
-    {
-        "title": "League of Legends",
-        "description": "Best MOBA",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 6,
-        "colStyle": "col-sm-6",
-        "style": {
-          "backgroundColor": "#283593"
-        }
-    },
-    {
-        "title": "Super Mario Brothers",
-        "description": "Best FPS ever",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 6,
-        "colStyle": "col-sm-6",
-        "style": {
-          "backgroundColor": "#283593"
-        }
-    },
-    {
-        "title": "Call of Duty 4",
-        "description": "Best FPS ever",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 6,
-        "colStyle": "col-sm-6",
-        "style": {
-          "backgroundColor": "#283593"
-        }
-    }
-    ]
 }
 
 
