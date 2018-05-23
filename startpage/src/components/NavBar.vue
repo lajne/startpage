@@ -1,6 +1,6 @@
 <template>
 
-<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark">
+<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark" variant="primary">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#">
     <web-icon />
