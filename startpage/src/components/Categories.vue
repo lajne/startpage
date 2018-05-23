@@ -26,14 +26,22 @@ export default {
     title: String,
     description: String,
     cat: Object,
-    searchTerm: String
+    searchTerm: String,
   },
   computed: {
     filteredCards: function () {
+      console.log("searchTerM:  ", this.searchTerm);
+      if(this.cat.cards.tags == null) {
+        console.log("tag is null");
+        console.log("tag:  ", this.cat.cards.tags);
+      }
+      // for(let i = 0;i < myTags.length; i++) {
+      //   console.log("tags:  ", myTags[i]);
+      // }
       if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
         return this.cat.cards;
       } 
-      // else if(this.cat.tags.toLowerCase().match(this.searchTerm.toLowerCase())) {
+      // if(this.cat.cards.tags.toLowerCase().match(this.searchTerm.toLowerCase())) {
       //   return this.cat.cards.filter((card) => {
       //     return card.tags.toLowerCase().match(this.searchTerm.toLowerCase());
       //   });

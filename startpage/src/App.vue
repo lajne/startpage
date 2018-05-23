@@ -17,11 +17,6 @@
 </template>
 
 <script>
-// här i app.vue ha en funktion som loopar igenom länkarna till 
-// kategorierna så vi har koll på dem redan här.
-// så kollar vi om den här kategorin om det innehåller det här sökordet.
-// eller innehåller den här länken det här sökordet.
-
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
@@ -35,8 +30,10 @@ export default {
   },
   created: function () {
     this.getStartDef();
+    console.log("created:  ");
   },
   data: function() {
+    console.log("data:  ");
      return {
        categories: [],
        searchTerm: ""
@@ -47,6 +44,7 @@ export default {
       let self = this;
       setTimeout( () => {
         self.categories = loadedData.Categories;
+        console.log("in methods:  ", self.categories);
       }, 500)
     },
   },
@@ -54,19 +52,20 @@ export default {
     filter: function () {
       let self = this;
       let filteredCategories = [];
+      console.log("computed:  ", self.categories);
 
       if(this.searchTerm === "") {
         return this.categories;
       }
       for(let cat of self.categories) {
         if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat);
+        && !filteredCategories.includes(cat)) {
+          filteredCategories.push(cat);
         }
         for(let link of cat.cards) {
           if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-            && !filteredCategories.includes(cat)) {
-              filteredCategories.push(cat)
+          && !filteredCategories.includes(cat)) {
+            filteredCategories.push(cat)
           }
         }
       }
