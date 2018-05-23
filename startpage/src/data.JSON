@@ -91,7 +91,8 @@
         "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["USA"]
       },
       {
         "title": "Daniel Tabacskó",

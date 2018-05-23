@@ -32,9 +32,4 @@ export default {
 
 <style scoped>
 
-#navbar {
-  background-color: #37474F;
-  color: #ffffff;
-}
-
 </style>

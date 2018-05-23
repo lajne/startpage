@@ -5,8 +5,7 @@
   <b-card class="mt-2 animated slideInUp" id="b-card">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
     <b-row class="justify-content-between">
-
-      <Card v-for="(card, index) in cat.cards" 
+      <Card v-for="(card, index) in filteredCards" 
             v-bind:key="index" 
             v-bind:title="card.title" 
             v-bind:col="card.col" 
@@ -32,8 +31,25 @@ export default {
   },
   props: {
     description: String,
-    title: String,
-    cat: Object
+    cat: Object,
+    searchTerm: String
+  },
+  computed: {
+    filteredCards: function () {
+      if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
+        return this.cat.cards;
+      } 
+      // else if(this.cat.tags.toLowerCase().match(this.searchTerm.toLowerCase())) {
+      //   return this.cat.cards.filter((card) => {
+      //     return card.tags.toLowerCase().match(this.searchTerm.toLowerCase());
+      //   });
+      // }
+      else {
+        return this.cat.cards.filter((card) => {
+          return card.title.toLowerCase().match(this.searchTerm.toLowerCase());
+        });
+      }
+    }
   }
 }
 </script>
