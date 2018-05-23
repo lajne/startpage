@@ -6,47 +6,42 @@
       "cards": [
       {
           "title": "Computer",
-          "description": "Computer stuff",
+          "shortDescription": "Everything about computers.",
+          "description": "Computer stuff and a lot more text",
           "URL": "#",
           "imageUrl": "",
-          "col": 4,
-          "colStyle": "col-sm-4",
+          "col": 6,
+          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
-          }
-      },
-      { 
-          "title": "Mobile",
-          "description": "You can't have an iPhone..",
-          "URL": "#",
-          "imageUrl": "#",
-          "col": 4,
-          "colStyle": "col-sm-4",
-          "style": {
-            "backgroundColor": "#00897b"
-          }
+          },
+          "tags": ["Computer", "IT"]
       },
       {
           "title": "Internet",
+          "shortDescription": "Who does internet better than us? Hint: no one.",
           "description": "Try restarting the router..",
           "URL": "#",
           "imageUrl": "#",
-          "col": 4,
-          "colStyle": "col-sm-4",
+          "col": 6,
+          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
-          }
+          },
+          "tags": ["Web", "wifi"]
       },
-      {
-        "title": "Computer",
-        "description": "Computer stuff",
+      { 
+        "title": "Mobile",
+        "shortDescription": "See what we have to offer in our wide range of mobile phones.",
+        "description": "You can't have an iPhone..",
         "URL": "#",
-        "imageUrl": "",
-        "col": 4,
-        "colStyle": "col-sm-4",
+        "imageUrl": "#",
+        "col": 12,
+        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#00897b"
-        }
+        },
+        "tags": ["Mobile", "IT", "iPhone"]
     }
       ]
   },
@@ -56,6 +51,7 @@
       "cards": [
       {
           "title": "Feelings",
+          "shortDescription": "Talk to our experts about your problems.",
           "description": "Do you want to talk about it?",
           "URL": "#",
           "imageUrl": "#",
@@ -63,7 +59,8 @@
           "colStyle": "col-sm-12",
           "style": {
             "backgroundColor": "#2196F3"
-          }
+          },
+          "tags": ["red"]
       }
       ]
   },
@@ -73,6 +70,7 @@
       "cards": [
       {
           "title": "Alexander Linné",
+          "shortDescription": "Long hair",
           "description": "Bodafors",
           "URL": "#",
           "imageUrl": "#",
@@ -80,10 +78,12 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#ef5350"
-          }
+          },
+          "tags": ["Bodafors"]
       },
       {
         "title": "Mallory Fraiche",
+        "shortDescription": "Made in USA",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -95,6 +95,7 @@
       },
       {
         "title": "Daniel Tabacskó",
+        "shortDescription": "Cool",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -102,10 +103,12 @@
         "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["Anderstorp", "blonde", "amazing"]
     },
       {
         "title": "Timmie Bark",
+        "shortDescription": "Forsheda",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -113,10 +116,12 @@
         "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["webdav"]
       },
       {
         "title": "Mattias Jarl",
+        "shortDescription": "Many kids",
         "description": "Amazing",
         "URL": "#",
         "imageUrl": "#",
@@ -124,7 +129,8 @@
         "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["NHL"]
       }
       ]
   },
@@ -134,6 +140,7 @@
       "cards": [
       {
           "title": "League of Legends",
+          "shortDescription": "Yo",
           "description": "Best MOBA",
           "URL": "#",
           "imageUrl": "#",
@@ -141,10 +148,12 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
-          }
+          },
+          "tags": ["Moba"]
       },
       {
           "title": "Super Mario Brothers",
+          "shortDescription": "Classic is always best. Eller?",
           "description": "Best FPS ever",
           "URL": "#",
           "imageUrl": "#",
@@ -152,10 +161,12 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
-          }
+          },
+          "tags": []
       },
       {
           "title": "Call of Duty 4",
+          "shortDescription": "R.I.P",
           "description": "Best FPS ever",
           "URL": "#",
           "imageUrl": "#",
@@ -163,145 +174,113 @@
           "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
-          }
+          },
+          "tags": ["2007"]
       }
       ]
   },
-
-
-
   {
-    "title": "IT",
-    "description": "All about IT",
-    "cards": [
-    {
-        "title": "Computer",
-        "description": "Computer stuff",
-        "URL": "#",
-        "imageUrl": "",
-        "col": 4,
-        "colStyle": "col-sm-4",
-        "style": {
-          "backgroundColor": "#00897b"
-        }
-    },
-    { 
-        "title": "Mobile",
-        "description": "You can't have an iPhone..",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 4,
-        "colStyle": "col-sm-4",
-        "style": {
-          "backgroundColor": "#00897b"
-        }
-    },
-    {
-        "title": "Internet",
-        "description": "Try restarting the router..",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 4,
-        "colStyle": "col-sm-4",
-        "style": {
-          "backgroundColor": "#00897b"
-        }
-    },
-    {
-      "title": "Computer",
-      "description": "Computer stuff",
-      "URL": "#",
-      "imageUrl": "",
-      "col": 4,
-      "colStyle": "col-sm-4",
-      "style": {
-        "backgroundColor": "#00897b"
+      "title": "Operating systems",
+      "description": "Computer OS:s",
+      "cards": [
+      {
+          "title": "Mac OS",
+          "shortDescription": "Best OS",
+          "description": "Amazing Amazing Amazing Amazing",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 12,
+          "colStyle": "col-sm-12",
+          "style": {
+              "backgroundColor": "#AB47BC"
+          },
+          "tags": ["nice", "beautiful", "nix"]
+      },
+      {
+          "title": "Linux",
+          "shortDescription": "Difficult",
+          "description": "A really good OS",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#AB47BC"
+          },
+          "tags": ["customize, nix"]
+      },
+      {
+          "title": "Windows",
+          "shortDescription": "Terrible",
+          "description": "Locked down system with an outdated terminal",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#AB47BC"
+          },
+          "tags": ["microsoft", "corporate", "ugly"]
       }
-  }
-    ]
-},
-{
-    "title": "HR",
-    "description": "Human stuff",
-    "cards": [
-    {
-        "title": "Feelings",
-        "description": "Do you want to talk about it?",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 12,
-        "colStyle": "col-sm-12",
-        "style": {
-          "backgroundColor": "#2196F3"
-        }
-    }
-    ]
-},
-{
-    "title": "Students",
-    "description": "Insanely talented engineers in the world",
-    "cards": [
-    {
-        "title": "Alexander Linné",
-        "description": "Bodafors",
-        "URL": "#",
-        "imageUrl": "#",
-        "col": 6,
-        "colStyle": "col-sm-6",
-        "style": {
-          "backgroundColor": "#ef5350"
-        }
-    },
-    {
-      "title": "Mallory Fraiche",
-      "description": "Amazing",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 6,
-      "colStyle": "col-sm-6",
-      "style": {
-        "backgroundColor": "#ef5350"
-      }
-    },
-    {
-      "title": "Daniel Tabacskó",
-      "description": "Amazing",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 12,
-      "colStyle": "col-sm-12",
-      "style": {
-        "backgroundColor": "#ef5350"
-      }
+      ]
   },
-    {
-      "title": "Timmie Bark",
-      "description": "Amazing",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 6,
-      "colStyle": "col-sm-6",
-      "style": {
-        "backgroundColor": "#ef5350"
+  {
+      "title": "Time reporting",
+      "description": "Time is precious",
+      "cards": [
+      {
+          "title": "Time",
+          "shortDescription": "The clock is ticking, keep track here.",
+          "description": "Time sheet",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+              "backgroundColor": "#FF7043"
+          },
+          "tags": ["nice", "beautiful", "nix"]
+      },
+      {
+          "title": "Report sick absence",
+          "shortDescription": "Notification of sickness and return to duty.",
+          "description": "A good thing to do",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#FF7043"
+          },
+          "tags": ["customize, nix"]
+      },
+      {
+          "title": "Vacation",
+          "shortDescription": "Keep track of vacation days.",
+          "description": "Mix things up",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#FF7043"
+          },
+          "tags": ["microsoft", "corporate", "ugly"]
+      },
+      {
+          "title": "Paystub",
+          "shortDescription": "Here you can find your payslip.",
+          "description": "Money tracking",
+          "URL": "#",
+          "imageUrl": "#",
+          "col": 6,
+          "colStyle": "col-sm-6",
+          "style": {
+            "backgroundColor": "#FF7043"
+          },
+          "tags": ["microsoft", "corporate", "ugly"]
       }
-    },
-    {
-      "title": "Mattias Jarl",
-      "description": "Amazing",
-      "URL": "#",
-      "imageUrl": "#",
-      "col": 6,
-      "colStyle": "col-sm-6",
-      "style": {
-        "backgroundColor": "#ef5350"
-      }
-    }
-    ]
-}
-
-
-
-
-
+      ]
+  }
   ]
   }

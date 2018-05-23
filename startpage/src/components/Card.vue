@@ -1,13 +1,20 @@
 <template>
 <b-col v-bind:class="colStyle">
-  <div id="cardStyle">
+  <div>
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
+
       <b-card
         class="mt-2" 
         v-bind:style="styles"
         text-variant="white">
-        <p class="white-text card-text"><monitor-icon />&nbsp;&nbsp;&nbsp;{{ title }}</p>
+        <!-- <div class="card-body"> -->
+          <blockquote class="mb-2">
+            <p class="card-title">{{ title }}</p>
+            <footer class="white-text">{{ shortDescription }}</footer>
+          </blockquote>
+        <!-- </div> -->
       </b-card>      
+
     </a>
   </div>
 </b-col>
@@ -18,6 +25,7 @@ export default {
   name: 'Card',
   props: {
     title: String,
+    shortDescription: String,
     description: String,
     URL: String,
     imageUrl: String,
@@ -29,7 +37,12 @@ export default {
 </script>
 
 <style scoped>
-#cardStyle {
-  text-align: center;
+.card-title {
+  font-weight: 400;
+}
+footer {
+  font-style: italic;
+  font-size: 80%;
+  font-weight: 300;
 }
 </style>

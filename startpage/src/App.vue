@@ -4,16 +4,12 @@
     <SearchBar />
     <div class="container-fluid">
       <b-row>
-        <b-card-group id="cardGroupColumnsStyle" columns>
-
-      
-        <Categories v-for="(category, index) in categories" 
-                    v-bind:key="index" 
-                    v-bind:cat="category" 
-                    v-bind:title="category.title" 
-                    v-bind:description="category.description" />
-
-        
+        <b-card-group columns>
+          <Categories v-for="(category, index) in categories" 
+                      v-bind:key="index" 
+                      v-bind:cat="category" 
+                      v-bind:title="category.title" 
+                      v-bind:description="category.description" />
         </b-card-group>
       </b-row>
     </div>
@@ -59,7 +55,4 @@ export default {
   height: 100vh;
   padding: 70px 25px;
 }
-/* #cardGroupColumnsStyle {
-  display: inline-block;
-} */
 </style>
