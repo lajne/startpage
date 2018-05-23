@@ -91,7 +91,8 @@
         "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
-        }
+        },
+        "tags": ["USA"]
       },
       {
         "title": "Daniel Tabacskó",
@@ -162,7 +163,7 @@
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": []
+          "tags": ["Game"]
       },
       {
           "title": "Call of Duty 4",

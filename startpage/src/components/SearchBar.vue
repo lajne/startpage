@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="md-form">
-      <input type="text" class="form-control animated" id="searchInput" 
+      <input type="text"  v-model="searchTerm" class="form-control animated" id="searchInput" 
              mdbInputDirective autofocus placeholder="Search">
     </div>
   </div>
@@ -11,6 +11,20 @@
 export default {
   name: 'searchBar',
   props: {
+    value: {
+      default: ''
+    }
+  },
+  data: function () {
+    return { searchTerm: this.value }
+  },
+  watch: {
+    value: function (val) {
+      this.searchTerm = val
+    },
+    searchTerm: function (val) {
+      this.$emit('input', val)
+    }
 
   }
 }
