@@ -1,6 +1,6 @@
 <template>
 
-<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark">
+<b-navbar class="fixed-top" id="navbar" toggleable="md" type="dark" variant="primary">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#">
     <web-icon />
@@ -31,10 +31,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+// @import "./assets/_custom.scss";
+
 
 #navbar {
-  background-color: #37474F;
+  // background-color: $primary-color !important;
   color: #ffffff;
 }
 

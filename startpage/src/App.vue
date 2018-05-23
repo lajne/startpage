@@ -45,7 +45,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+// @import 'bootstrap/dist/css/bootstrap.css';
+// @import '~bootstrap-vue/dist/bootstrap-vue.css';
+// @import 'mdbootstrap/css/mdb.css';
+@import "assets/_custom.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import "assets/_custom.scss";
+// @import "~bootstrap/scss/bootstrap.scss";
+// @import "~mdbootstrap/scss/mdb.scss";
+
+
 #app {
   background-color: #f5f5f5;
   display: table;
