@@ -15,7 +15,7 @@
           "style": {
             "backgroundColor": "#00897b"
           },
-          "tags": ["Computer", "IT"]
+          "tags": [ "computer", "it" ]
       },
       {
           "title": "Internet",
@@ -60,7 +60,7 @@
           "style": {
             "backgroundColor": "#2196F3"
           },
-          "tags": ["red"]
+          "tags": [ "red" ]
       }
       ]
   },
@@ -79,7 +79,7 @@
           "style": {
             "backgroundColor": "#ef5350"
           },
-          "tags": ["Bodafors"]
+          "tags": [ "Bodafors" ]
       },
       {
         "title": "Mallory Fraiche",
@@ -92,7 +92,7 @@
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["USA"]
+        "tags": [ "USA" ]
       },
       {
         "title": "Daniel Tabacskó",
@@ -105,7 +105,7 @@
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["Anderstorp", "blonde", "amazing"]
+        "tags": [ "Anderstorp", "blonde", "amazing" ]
     },
       {
         "title": "Timmie Bark",
@@ -118,7 +118,7 @@
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["webdav"]
+        "tags": [ "webdav" ]
       },
       {
         "title": "Mattias Jarl",
@@ -131,7 +131,7 @@
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["NHL"]
+        "tags": [ "NHL" ]
       }
       ]
   },
@@ -150,7 +150,7 @@
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": ["Moba"]
+          "tags": [ "Moba" ]
       },
       {
           "title": "Super Mario Brothers",
@@ -163,7 +163,7 @@
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": []
+          "tags": [ "Game" ]
       },
       {
           "title": "Call of Duty 4",
@@ -176,7 +176,7 @@
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": ["2007"]
+          "tags": [ "2007" ]
       }
       ]
   },
@@ -195,7 +195,7 @@
           "style": {
               "backgroundColor": "#AB47BC"
           },
-          "tags": ["nice", "beautiful", "nix"]
+          "tags": [ "nice", "beautiful", "nix" ]
       },
       {
           "title": "Linux",
@@ -208,7 +208,7 @@
           "style": {
             "backgroundColor": "#AB47BC"
           },
-          "tags": ["customize, nix"]
+          "tags": [ "customize, nix" ]
       },
       {
           "title": "Windows",
@@ -221,7 +221,7 @@
           "style": {
             "backgroundColor": "#AB47BC"
           },
-          "tags": ["microsoft", "corporate", "ugly"]
+          "tags": [ "microsoft", "corporate", "ugly" ]
       }
       ]
   },

@@ -26,26 +26,36 @@ export default {
   props: {
     description: String,
     cat: Object,
-    searchTerm: String
+    searchTerm: String,
   },
   computed: {
     filteredCards: function () {
+      let self = this;
+      let myCard = self.cat.cards;
+      let tag;
+      let filteredArray = [];
+
       if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
         return this.cat.cards;
       } 
-      // else if(this.cat.tags.toLowerCase().match(this.searchTerm.toLowerCase())) {
-      //   return this.cat.cards.filter((card) => {
-      //     return card.tags.toLowerCase().match(this.searchTerm.toLowerCase());
-      //   });
-      // }
       else {
-        return this.cat.cards.filter((card) => {
-          return card.title.toLowerCase().match(this.searchTerm.toLowerCase());
+        myCard.forEach(card => {
+          if(card.title.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card)) {
+            filteredArray.push(card);
+          }
+          for(let i = 0; i < card.tags.length; i++) {
+            tag = card.tags[i];
+            if( tag.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card) ){
+              filteredArray.push(card);
+            }
+          }
         });
+      return filteredArray;
       }
     }
   }
 }
+
 </script>
 
 <style scoped>

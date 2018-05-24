@@ -7,23 +7,18 @@
       <b-row>
         <div class="card-columns">
         <Categories v-bind:searchTerm="searchTerm"
-                    v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
-        </div>
+                    v-if="filter.length > 0"
+                      v-for="(cat, index) in filter" 
+                        v-bind:key="index" 
+                        v-bind:cat="cat" 
+                        v-bind:title="cat.title" 
+                        v-bind:description="cat.description"/>
       </b-row>
     </div>
   </div>
 </template>
 
 <script>
-// här i app.vue ha en funktion som loopar igenom länkarna till 
-// kategorierna så vi har koll på dem redan här.
-// så kollar vi om den här kategorin om det innehåller det här sökordet.
-// eller innehåller den här länken det här sökordet.
-
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
@@ -62,13 +57,19 @@ export default {
       }
       for(let cat of self.categories) {
         if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat);
+        && !filteredCategories.includes(cat)) {
+          filteredCategories.push(cat);
         }
         for(let link of cat.cards) {
           if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-            && !filteredCategories.includes(cat)) {
-              filteredCategories.push(cat)
+          && !filteredCategories.includes(cat)) {
+            filteredCategories.push(cat)
+          }
+          for(let tag of link.tags) {
+            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
+            && !filteredCategories.includes(cat)){
+              filteredCategories.push(cat);
+            }
           }
         }
       }
