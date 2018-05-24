@@ -5,14 +5,14 @@
     <div class="container-fluid">
       <b-row>
         <div class="card-columns">
-          <Categories v-bind:searchTerm="searchTerm"
-                    v-model="filterFunction"
-                    v-for="(cat, index) in categories" 
-                    v-bind:key="index" 
-                    v-bind:cat="cat" 
-                    v-bind:title="cat.title" 
-                    v-bind:description="cat.description"/>
-        </div>
+        <Categories v-bind:searchTerm="searchTerm"
+                    v-if="filter.length > 0"
+                      v-for="(cat, index) in filter" 
+                        v-bind:key="index" 
+                        v-bind:cat="cat" 
+                        v-bind:title="cat.title" 
+                        v-bind:description="cat.description"/>
+      </div>
       </b-row>
     </div>
   </div>
@@ -48,30 +48,32 @@ export default {
     },
   },
   computed: {
+    filter: function () {
+      let self = this;
+      let filteredCategories = [];
 
-    filterFunction: function(){
-      console.log("in the filterFunction()");
-      
-        let cat = this.categories;
-     
-
-
-
-      // let self = this;
-      // if (self.searchTerm != ""){
-
-      //   let allCategories = self.categories;
-      //   let categoryTitle = self.categories.title;
-      //   console.log(categoryTitle);
-      //   allCategories.forEach((element) => {
-
-          
-
-      //   });
-
-      // }
-
-
+      if(this.searchTerm === "") {
+        return this.categories;
+      }
+      for(let cat of self.categories) {
+        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+        && !filteredCategories.includes(cat)) {
+          filteredCategories.push(cat);
+        }
+        for(let link of cat.cards) {
+          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+          && !filteredCategories.includes(cat)) {
+            filteredCategories.push(cat)
+          }
+          for(let tag of link.tags) {
+            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
+            && !filteredCategories.includes(cat)){
+              filteredCategories.push(cat);
+            }
+          }
+        }
+      }
+      return filteredCategories;
     }
 
     // filter: function () {
@@ -120,15 +122,10 @@ export default {
 </script>
 
 <style lang="scss">
-//@import 'bootstrap/dist/css/bootstrap.css';
-// @import '~bootstrap-vue/dist/bootstrap-vue.css';
-// @import 'mdbootstrap/css/mdb.css';
 @import "assets/_custom.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 @import '~mdbootstrap/css/mdb.css';
-// @import "~bootstrap/scss/bootstrap.scss";
-// @import "~mdbootstrap/scss/mdb.scss";
 
 #app {
   background-color: #f5f5f5;
