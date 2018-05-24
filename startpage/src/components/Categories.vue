@@ -30,30 +30,32 @@ export default {
   },
   computed: {
     filteredCards: function () {
-      console.log("searchTerM:  ", this.searchTerm);
-      if(this.cat.cards.tags == null) {
-        console.log("tag is null");
-        console.log("tag:  ", this.cat.cards.tags);
-      }
-      // for(let i = 0;i < myTags.length; i++) {
-      //   console.log("tags:  ", myTags[i]);
-      // }
+      let self = this;
+      let myCard = self.cat.cards;
+      let tag;
+      let filteredArray = [];
+
       if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
         return this.cat.cards;
       } 
-      // if(this.cat.cards.tags.toLowerCase().match(this.searchTerm.toLowerCase())) {
-      //   return this.cat.cards.filter((card) => {
-      //     return card.tags.toLowerCase().match(this.searchTerm.toLowerCase());
-      //   });
-      // }
       else {
-        return this.cat.cards.filter((card) => {
-          return card.title.toLowerCase().match(this.searchTerm.toLowerCase());
+        myCard.forEach(card => {
+          if(card.title.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card)) {
+            filteredArray.push(card);
+          }
+          for(let i = 0; i < card.tags.length; i++) {
+            tag = card.tags[i];
+            if( tag.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card) ){
+              filteredArray.push(card);
+            }
+          }
         });
+      return filteredArray;
       }
     }
   }
 }
+
 </script>
 
 <style scoped>

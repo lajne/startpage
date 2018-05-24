@@ -6,11 +6,12 @@
       <!-- <p> {{ filteredCategories }} {{ filteredLinks }} </p> -->
       <b-row>
         <Categories v-bind:searchTerm="searchTerm"
-                    v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
+                    v-if="filter.length > 0"
+                      v-for="(cat, index) in filter" 
+                        v-bind:key="index" 
+                        v-bind:cat="cat" 
+                        v-bind:title="cat.title" 
+                        v-bind:description="cat.description"/>
       </b-row>
     </div>
   </div>
@@ -30,10 +31,8 @@ export default {
   },
   created: function () {
     this.getStartDef();
-    console.log("created:  ");
   },
   data: function() {
-    console.log("data:  ");
      return {
        categories: [],
        searchTerm: ""
@@ -44,7 +43,6 @@ export default {
       let self = this;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-        console.log("in methods:  ", self.categories);
       }, 500)
     },
   },
@@ -52,7 +50,6 @@ export default {
     filter: function () {
       let self = this;
       let filteredCategories = [];
-      console.log("computed:  ", self.categories);
 
       if(this.searchTerm === "") {
         return this.categories;
@@ -66,6 +63,12 @@ export default {
           if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
           && !filteredCategories.includes(cat)) {
             filteredCategories.push(cat)
+          }
+          for(let tag of link.tags) {
+            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
+            && !filteredCategories.includes(cat)){
+              filteredCategories.push(cat);
+            }
           }
         }
       }
