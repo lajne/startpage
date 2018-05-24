@@ -11,7 +11,6 @@
           "URL": "#",
           "imageUrl": "",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
           },
@@ -24,7 +23,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
           },
@@ -37,7 +35,6 @@
         "URL": "#",
         "imageUrl": "#",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#00897b"
         },
@@ -56,7 +53,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
             "backgroundColor": "#2196F3"
           },
@@ -75,7 +71,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#ef5350"
           },
@@ -88,7 +83,6 @@
         "URL": "#",
         "imageUrl": "#",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -101,7 +95,6 @@
         "URL": "#",
         "imageUrl": "#",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -114,7 +107,6 @@
         "URL": "#",
         "imageUrl": "#",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -127,7 +119,6 @@
         "URL": "#",
         "imageUrl": "#",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -146,7 +137,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -159,7 +149,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -172,7 +161,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -191,7 +179,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
               "backgroundColor": "#AB47BC"
           },
@@ -204,7 +191,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#AB47BC"
           },
@@ -217,7 +203,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#AB47BC"
           },
@@ -236,7 +221,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
               "backgroundColor": "#FF7043"
           },
@@ -249,7 +233,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -262,7 +245,6 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -275,7 +257,7 @@
           "URL": "#",
           "imageUrl": "#",
           "col": 6,
-          "colStyle": "col-sm-6",
+          
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -294,7 +276,6 @@
       "URL": "#",
       "imageUrl": "#",
       "col": 12,
-      "colStyle": "col-sm-12",
       "style": {
         "backgroundColor": "#FF7043"
       },
@@ -307,7 +288,6 @@
       "URL": "#",
       "imageUrl": "#",
       "col": 12,
-      "colStyle": "col-sm-12",
       "style": {
         "backgroundColor": "#FF7043"
       },

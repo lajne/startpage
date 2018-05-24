@@ -11,7 +11,8 @@
                       v-bind:key="index" 
                       v-bind:cat="cat" 
                       v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
+                      v-bind:description="cat.description"
+          />
         </div>
       </b-row>
     </div>
