@@ -3,7 +3,6 @@
     <NavBar />
     <SearchBar  v-model="searchTerm" />
     <div class="container-fluid">
-      <!-- <p> {{ filteredCategories }} {{ filteredLinks }} </p> -->
       <b-row>
         <div class="card-columns">
         <Categories v-bind:searchTerm="searchTerm"
@@ -42,7 +41,7 @@ export default {
      return {
        categories: [],
        searchTerm: ""
-     }
+    }
   },
   methods: {
     getStartDef: function () {
@@ -80,6 +79,48 @@ export default {
       }
       return filteredCategories;
     }
+
+    // filter: function () {
+
+    //   let self = this;
+    //   let filteredCategories = [];
+
+      // let allCategories = self.categories;
+      // allCategories.forEach(element => {
+      //   console.log("in allCategories foreach", element);
+      //   let allCards = element.cards;
+      //   allCards.forEach(element => {
+      //     console.log("in the allCards foreach", allCards);
+      //     let allTags = element.tags;
+      //     console.log("all the cards TAGS", element.tags);
+      //   });
+      // });
+
+
+    //   if(this.searchTerm === "") {
+    //     console.log("in the filter function", this.categories);
+    //     return this.categories;
+    //   }
+
+    //   for(let cat of self.categories) {
+    //     if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+    //       && !filteredCategories.includes(cat)) {
+    //         filteredCategories.push(cat);
+    //     }
+    //     for(let link of cat.cards) {
+    //       if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+    //         && !filteredCategories.includes(cat)) {
+    //           filteredCategories.push(cat);
+    //       }
+    //     }
+        
+    //   }
+
+    //   return filteredCategories;
+
+
+
+    // }
   }
 }
 </script>
