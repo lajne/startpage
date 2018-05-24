@@ -38,15 +38,16 @@ export default {
   computed: {
     filteredCards: function () {
       let self = this;
-      let myCard = self.cat.cards;
+      let myCards = self.cat.cards;
       let tag;
       let filteredArray = [];
+      let filteredTags = [];
 
       if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
         return this.cat.cards;
       } 
       else {
-        myCard.forEach(card => {
+        myCards.forEach(card => {
           if(card.title.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card)) {
             filteredArray.push(card);
           }
@@ -57,7 +58,7 @@ export default {
             }
           }
         });
-      return filteredArray;
+        return filteredArray;
       }
     }
   }

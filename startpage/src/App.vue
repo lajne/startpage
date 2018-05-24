@@ -5,14 +5,14 @@
     <div class="container-fluid">
       <b-row>
         <div class="card-columns">
-        <Categories v-bind:searchTerm="searchTerm"
-                    v-if="filter.length > 0"
+          <Categories v-bind:searchTerm="searchTerm"
+                      v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
-                        v-bind:key="index" 
-                        v-bind:cat="cat" 
-                        v-bind:title="cat.title" 
-                        v-bind:description="cat.description"/>
-      </div>
+                      v-bind:key="index" 
+                      v-bind:cat="cat" 
+                      v-bind:title="cat.title" 
+                      v-bind:description="cat.description"/>
+        </div>
       </b-row>
     </div>
   </div>
@@ -50,73 +50,37 @@ export default {
   computed: {
     filter: function () {
       let self = this;
-      let filteredCategories = [];
+      let filteredCategoriesByTitle = [];
+      let filteredCategoriesByTags = [];
 
       if(this.searchTerm === "") {
         return this.categories;
       }
       for(let cat of self.categories) {
         if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-        && !filteredCategories.includes(cat)) {
-          filteredCategories.push(cat);
+        && !filteredCategoriesByTitle.includes(cat)) {
+          filteredCategoriesByTitle.push(cat);
         }
         for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat)
+          if(
+            link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+            && !filteredCategoriesByTitle.includes(cat)
+          ){
+            filteredCategoriesByTitle.push(cat)
           }
           for(let tag of link.tags) {
-            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
-            && !filteredCategories.includes(cat)){
-              filteredCategories.push(cat);
+            if(
+              tag.toLowerCase().match(this.searchTerm.toLowerCase())
+              && !filteredCategoriesByTitle.includes(cat) 
+              && !filteredCategoriesByTags.includes(cat)
+            ){
+              filteredCategoriesByTags.push(cat);
             }
           }
         }
       }
-      return filteredCategories;
+      return filteredCategoriesByTitle.concat(filteredCategoriesByTags);
     }
-
-    // filter: function () {
-
-    //   let self = this;
-    //   let filteredCategories = [];
-
-      // let allCategories = self.categories;
-      // allCategories.forEach(element => {
-      //   console.log("in allCategories foreach", element);
-      //   let allCards = element.cards;
-      //   allCards.forEach(element => {
-      //     console.log("in the allCards foreach", allCards);
-      //     let allTags = element.tags;
-      //     console.log("all the cards TAGS", element.tags);
-      //   });
-      // });
-
-
-    //   if(this.searchTerm === "") {
-    //     console.log("in the filter function", this.categories);
-    //     return this.categories;
-    //   }
-
-    //   for(let cat of self.categories) {
-    //     if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-    //       && !filteredCategories.includes(cat)) {
-    //         filteredCategories.push(cat);
-    //     }
-    //     for(let link of cat.cards) {
-    //       if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-    //         && !filteredCategories.includes(cat)) {
-    //           filteredCategories.push(cat);
-    //       }
-    //     }
-        
-    //   }
-
-    //   return filteredCategories;
-
-
-
-    // }
   }
 }
 </script>
@@ -133,6 +97,10 @@ export default {
   width: 100%;
   height: 100vh;
   padding: 70px 25px;
+}
+
+.card-columns {
+  width: 100%
 }
 </style>
 
