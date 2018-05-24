@@ -11,7 +11,8 @@
                       v-bind:key="index" 
                       v-bind:cat="cat" 
                       v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
+                      v-bind:description="cat.description"
+          />
         </div>
       </b-row>
     </div>
@@ -50,29 +51,35 @@ export default {
   computed: {
     filter: function () {
       let self = this;
-      let filteredCategories = [];
+      let filteredCategoriesByTitle = [];
+      let filteredCategoriesByTags = [];
       if(this.searchTerm === "") {
         return this.categories;
       }
       for(let cat of self.categories) {
         if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-        && !filteredCategories.includes(cat)) {
-          filteredCategories.push(cat);
+        && !filteredCategoriesByTitle.includes(cat)) {
+          filteredCategoriesByTitle.push(cat);
         }
         for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat)
+          if(
+            link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+            && !filteredCategoriesByTitle.includes(cat)
+          ){
+            filteredCategoriesByTitle.push(cat)
           }
           for(let tag of link.tags) {
-            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
-            && !filteredCategories.includes(cat)){
-              filteredCategories.push(cat);
+            if(
+              tag.toLowerCase().match(this.searchTerm.toLowerCase())
+              && !filteredCategoriesByTitle.includes(cat) 
+              && !filteredCategoriesByTags.includes(cat)
+            ){
+              filteredCategoriesByTags.push(cat);
             }
           }
         }
       }
-      return filteredCategories;
+      return filteredCategoriesByTitle.concat(filteredCategoriesByTags);
     }
   }
 }
@@ -92,6 +99,7 @@ export default {
   padding: 70px 25px;
 }
 .card-columns {
-  width: 100%;
+  width: 100%
 }
 </style>
+

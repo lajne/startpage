@@ -11,7 +11,6 @@
           "URL": "#",
           "imageUrl": "laptop",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
           },
@@ -24,7 +23,6 @@
           "URL": "#",
           "imageUrl": "globe",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
           },
@@ -37,7 +35,6 @@
         "URL": "#",
         "imageUrl": "mobile-alt",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#00897b"
         },
@@ -56,7 +53,6 @@
           "URL": "#",
           "imageUrl": "hand-holding-heart",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
             "backgroundColor": "#2196F3"
           },
@@ -75,7 +71,6 @@
           "URL": "#",
           "imageUrl": "hand-spock",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#ef5350"
           },
@@ -88,7 +83,6 @@
         "URL": "#",
         "imageUrl": "hand-peace",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -101,7 +95,6 @@
         "URL": "#",
         "imageUrl": "chess-knight",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -114,7 +107,6 @@
         "URL": "#",
         "imageUrl": "bed",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -127,7 +119,6 @@
         "URL": "#",
         "imageUrl": "gamepad",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -146,7 +137,6 @@
           "URL": "#",
           "imageUrl": "magic",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -159,7 +149,6 @@
           "URL": "#",
           "imageUrl": "gamepad",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -172,7 +161,6 @@
           "URL": "#",
           "imageUrl": "fighter-jet",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -191,7 +179,6 @@
           "URL": "#",
           "imageUrl": "power-off",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
               "backgroundColor": "#AB47BC"
           },
@@ -204,7 +191,6 @@
           "URL": "#",
           "imageUrl": "power-off",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#AB47BC"
           },
@@ -217,7 +203,6 @@
           "URL": "#",
           "imageUrl": "power-off",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#AB47BC"
           },
@@ -236,7 +221,6 @@
           "URL": "#",
           "imageUrl": "clock",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
               "backgroundColor": "#FF7043"
           },
@@ -249,7 +233,6 @@
           "URL": "#",
           "imageUrl": "calendar-alt",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -262,7 +245,6 @@
           "URL": "#",
           "imageUrl": "ship",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -275,13 +257,43 @@
           "URL": "#",
           "imageUrl": "money-bill-alt",
           "col": 6,
-          "colStyle": "col-sm-6",
+          
           "style": {
             "backgroundColor": "#FF7043"
           },
           "tags": ["microsoft", "corporate", "ugly"]
       }
       ]
+  },
+  {
+    "title": "Countries",
+    "description": "Some contries",
+    "cards": [
+    {
+      "title": "Sweden",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["microsoft", "corporate", "ugly"]
+    },
+    {
+      "title": "USA",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["sunny", "tip", "big"]
+    }
+    ]
   }
   ]
   }
