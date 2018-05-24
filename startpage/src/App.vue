@@ -5,14 +5,14 @@
     <div class="container-fluid">
       <b-row>
         <div class="card-columns">
-        <Categories v-bind:searchTerm="searchTerm"
-                    v-if="filter.length > 0"
+          <Categories v-bind:searchTerm="searchTerm"
+                      v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
-                        v-bind:key="index" 
-                        v-bind:cat="cat" 
-                        v-bind:title="cat.title" 
-                        v-bind:description="cat.description"/>
-      </div>
+                      v-bind:key="index" 
+                      v-bind:cat="cat" 
+                      v-bind:title="cat.title" 
+                      v-bind:description="cat.description"/>
+        </div>
       </b-row>
     </div>
   </div>
@@ -28,7 +28,7 @@ export default {
   components: {
     NavBar,
     SearchBar,
-    Categories,
+    Categories
   },
   created: function () {
     this.getStartDef();
@@ -51,7 +51,6 @@ export default {
     filter: function () {
       let self = this;
       let filteredCategories = [];
-
       if(this.searchTerm === "") {
         return this.categories;
       }
@@ -75,48 +74,6 @@ export default {
       }
       return filteredCategories;
     }
-
-    // filter: function () {
-
-    //   let self = this;
-    //   let filteredCategories = [];
-
-      // let allCategories = self.categories;
-      // allCategories.forEach(element => {
-      //   console.log("in allCategories foreach", element);
-      //   let allCards = element.cards;
-      //   allCards.forEach(element => {
-      //     console.log("in the allCards foreach", allCards);
-      //     let allTags = element.tags;
-      //     console.log("all the cards TAGS", element.tags);
-      //   });
-      // });
-
-
-    //   if(this.searchTerm === "") {
-    //     console.log("in the filter function", this.categories);
-    //     return this.categories;
-    //   }
-
-    //   for(let cat of self.categories) {
-    //     if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-    //       && !filteredCategories.includes(cat)) {
-    //         filteredCategories.push(cat);
-    //     }
-    //     for(let link of cat.cards) {
-    //       if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-    //         && !filteredCategories.includes(cat)) {
-    //           filteredCategories.push(cat);
-    //       }
-    //     }
-        
-    //   }
-
-    //   return filteredCategories;
-
-
-
-    // }
   }
 }
 </script>
@@ -134,6 +91,7 @@ export default {
   height: 100vh;
   padding: 70px 25px;
 }
+.card-columns {
+  width: 100%;
+}
 </style>
-
-
