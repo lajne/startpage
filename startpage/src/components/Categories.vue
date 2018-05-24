@@ -1,7 +1,4 @@
 <template>
-   
-
-<!-- <b-col class="col-12 col-sm-12 col-lg-6"> -->
   <b-card class="mt-2 animated fadeIn" id="b-card">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
     <b-row>
@@ -12,14 +9,10 @@
               v-bind:colStyle="card.colStyle"
               v-bind:description="card.description" 
               v-bind:shortDescription="card.shortDescription"
+              v-bind:imageUrl="card.imageUrl"
               v-bind:styles="card.style" />
-
     </b-row>
   </b-card>
-<!-- </b-col> -->
-
-
-
 </template>
 
 <script>
@@ -41,7 +34,6 @@ export default {
       let myCard = self.cat.cards;
       let tag;
       let filteredArray = [];
-
       if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
         return this.cat.cards;
       } 
@@ -62,7 +54,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped>
@@ -74,6 +65,4 @@ export default {
   font-weight: 400;
   font-size:xx-large;
 }
-
-
 </style>
