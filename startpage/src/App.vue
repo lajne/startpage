@@ -13,6 +13,7 @@
                         v-bind:cat="cat" 
                         v-bind:title="cat.title" 
                         v-bind:description="cat.description"/>
+        </div>
       </b-row>
     </div>
   </div>
