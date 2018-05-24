@@ -13,6 +13,7 @@
                         v-bind:cat="cat" 
                         v-bind:title="cat.title" 
                         v-bind:description="cat.description"/>
+      </div>
       </b-row>
     </div>
   </div>
@@ -80,15 +81,10 @@ export default {
 </script>
 
 <style lang="scss">
-//@import 'bootstrap/dist/css/bootstrap.css';
-// @import '~bootstrap-vue/dist/bootstrap-vue.css';
-// @import 'mdbootstrap/css/mdb.css';
 @import "assets/_custom.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 @import '~mdbootstrap/css/mdb.css';
-// @import "~bootstrap/scss/bootstrap.scss";
-// @import "~mdbootstrap/scss/mdb.scss";
 
 #app {
   background-color: #f5f5f5;
