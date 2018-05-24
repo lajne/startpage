@@ -3,15 +3,15 @@
     <NavBar />
     <SearchBar  v-model="searchTerm" />
     <div class="container-fluid">
-      <!-- <p> {{ filteredCategories }} {{ filteredLinks }} </p> -->
       <b-row>
         <div class="card-columns">
-        <Categories v-bind:searchTerm="searchTerm"
-                    v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
+          <Categories v-bind:searchTerm="searchTerm"
+                    v-model="filterFunction"
+                    v-for="(cat, index) in categories" 
+                    v-bind:key="index" 
+                    v-bind:cat="cat" 
+                    v-bind:title="cat.title" 
+                    v-bind:description="cat.description"/>
         </div>
       </b-row>
     </div>
@@ -19,11 +19,6 @@
 </template>
 
 <script>
-// här i app.vue ha en funktion som loopar igenom länkarna till 
-// kategorierna så vi har koll på dem redan här.
-// så kollar vi om den här kategorin om det innehåller det här sökordet.
-// eller innehåller den här länken det här sökordet.
-
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
@@ -42,7 +37,7 @@ export default {
      return {
        categories: [],
        searchTerm: ""
-     }
+    }
   },
   methods: {
     getStartDef: function () {
@@ -53,27 +48,73 @@ export default {
     },
   },
   computed: {
-    filter: function () {
-      let self = this;
-      let filteredCategories = [];
 
-      if(this.searchTerm === "") {
-        return this.categories;
-      }
-      for(let cat of self.categories) {
-        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat);
-        }
-        for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-            && !filteredCategories.includes(cat)) {
-              filteredCategories.push(cat)
-          }
-        }
-      }
-      return filteredCategories;
+    filterFunction: function(){
+      console.log("in the filterFunction()");
+      
+        let cat = this.categories;
+     
+
+
+
+      // let self = this;
+      // if (self.searchTerm != ""){
+
+      //   let allCategories = self.categories;
+      //   let categoryTitle = self.categories.title;
+      //   console.log(categoryTitle);
+      //   allCategories.forEach((element) => {
+
+          
+
+      //   });
+
+      // }
+
+
     }
+
+    // filter: function () {
+
+    //   let self = this;
+    //   let filteredCategories = [];
+
+      // let allCategories = self.categories;
+      // allCategories.forEach(element => {
+      //   console.log("in allCategories foreach", element);
+      //   let allCards = element.cards;
+      //   allCards.forEach(element => {
+      //     console.log("in the allCards foreach", allCards);
+      //     let allTags = element.tags;
+      //     console.log("all the cards TAGS", element.tags);
+      //   });
+      // });
+
+
+    //   if(this.searchTerm === "") {
+    //     console.log("in the filter function", this.categories);
+    //     return this.categories;
+    //   }
+
+    //   for(let cat of self.categories) {
+    //     if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+    //       && !filteredCategories.includes(cat)) {
+    //         filteredCategories.push(cat);
+    //     }
+    //     for(let link of cat.cards) {
+    //       if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+    //         && !filteredCategories.includes(cat)) {
+    //           filteredCategories.push(cat);
+    //       }
+    //     }
+        
+    //   }
+
+    //   return filteredCategories;
+
+
+
+    // }
   }
 }
 </script>
