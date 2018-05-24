@@ -1,17 +1,18 @@
 <template>
 <b-col class="col-12 col-sm-12 col-lg-6">
-  <b-card class="mt-4 animated slideInUp" id="b-card">
-    <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
-    <b-row class="justify-content-between">
-      <Card v-for="(card, index) in filteredCards" 
-            v-bind:key="index" 
-            v-bind:title="card.title" 
-            v-bind:col="card.col" 
-            v-bind:colStyle="card.colStyle"
-            v-bind:description="card.description" 
-            v-bind:styles="card.style" />
-    </b-row>
-  </b-card>
+    <!-- animated slideInUp -->
+    <b-card class="mt-4 animated fadeIn" id="b-card">
+      <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
+      <b-row class="justify-content-between">
+        <Card  class="animated pulse" v-for="(card, index) in filteredCards" 
+              v-bind:key="index" 
+              v-bind:title="card.title" 
+              v-bind:col="card.col" 
+              v-bind:colStyle="card.colStyle"
+              v-bind:description="card.description" 
+              v-bind:styles="card.style" />
+      </b-row>
+    </b-card>
 </b-col>
 </template>
 
@@ -23,7 +24,6 @@ export default {
     Card
   },
   props: {
-    title: String,
     description: String,
     cat: Object,
     searchTerm: String,
@@ -67,4 +67,6 @@ export default {
   font-weight: 400;
   font-size:xx-large;
 }
+
+
 </style>

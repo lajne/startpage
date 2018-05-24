@@ -5,6 +5,7 @@
     <div class="container-fluid">
       <!-- <p> {{ filteredCategories }} {{ filteredLinks }} </p> -->
       <b-row>
+        <div class="card-columns">
         <Categories v-bind:searchTerm="searchTerm"
                     v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
@@ -79,7 +80,7 @@ export default {
 </script>
 
 <style lang="scss">
-// @import 'bootstrap/dist/css/bootstrap.css';
+//@import 'bootstrap/dist/css/bootstrap.css';
 // @import '~bootstrap-vue/dist/bootstrap-vue.css';
 // @import 'mdbootstrap/css/mdb.css';
 @import "assets/_custom.scss";
@@ -88,7 +89,6 @@ export default {
 @import '~mdbootstrap/css/mdb.css';
 // @import "~bootstrap/scss/bootstrap.scss";
 // @import "~mdbootstrap/scss/mdb.scss";
-
 
 #app {
   background-color: #f5f5f5;
