@@ -29,7 +29,7 @@ export default {
   components: {
     NavBar,
     SearchBar,
-    Categories,
+    Categories
   },
   created: function () {
     this.getStartDef();
@@ -53,7 +53,6 @@ export default {
       let self = this;
       let filteredCategoriesByTitle = [];
       let filteredCategoriesByTags = [];
-
       if(this.searchTerm === "") {
         return this.categories;
       }
@@ -99,8 +98,8 @@ export default {
   height: 100vh;
   padding: 70px 25px;
 }
-
 .card-columns {
   width: 100%
 }
 </style>
+
