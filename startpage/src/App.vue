@@ -14,6 +14,7 @@
                         :title="cat.title" 
                         :description="cat.description"/>
       </div>
+
       </b-row>
     </div>
   </div>
@@ -29,7 +30,7 @@ export default {
   components: {
     NavBar,
     SearchBar,
-    Categories,
+    Categories
   },
   mounted: function() {
     this.loadPage();
@@ -55,30 +56,35 @@ export default {
   computed: {
     filter: function () {
       let self = this;
-      let filteredCategories = [];
-
-      if(self.searchTerm === "") {
-        return self.categories;
+      let filteredCategoriesByTitle = [];
+      let filteredCategoriesByTags = [];
+      if(this.searchTerm === "") {
+        return this.categories;
       }
       for(let cat of self.categories) {
-        if(cat.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
-        && !filteredCategories.includes(cat)) {
-          filteredCategories.push(cat);
+        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+        && !filteredCategoriesByTitle.includes(cat)) {
+          filteredCategoriesByTitle.push(cat);
         }
         for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat)
+          if(
+            link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+            && !filteredCategoriesByTitle.includes(cat)
+          ){
+            filteredCategoriesByTitle.push(cat)
           }
           for(let tag of link.tags) {
-            if(tag.toLowerCase().match(self.searchTerm.toLowerCase())
-            && !filteredCategories.includes(cat)){
-              filteredCategories.push(cat);
+            if(
+              tag.toLowerCase().match(this.searchTerm.toLowerCase())
+              && !filteredCategoriesByTitle.includes(cat) 
+              && !filteredCategoriesByTags.includes(cat)
+            ){
+              filteredCategoriesByTags.push(cat);
             }
           }
         }
       }
-      return filteredCategories;
+      return filteredCategoriesByTitle.concat(filteredCategoriesByTags);
     }
   }
 }
@@ -101,5 +107,4 @@ export default {
   width: 100%;
 }
 </style>
-
 

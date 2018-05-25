@@ -1,5 +1,4 @@
 <template>
-
   <b-card class="mt-2 animated fadeIn" id="b-card">
     <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top :title="description">{{cat.title}}</div>
     <b-row>
@@ -13,7 +12,6 @@
               :styles="card.style" />
     </b-row>
   </b-card>
-
 </template>
 
 <script>
@@ -32,7 +30,7 @@ export default {
   computed: {
     filteredCards: function () {
       let self = this;
-      let myCard = self.cat.cards;
+      let myCards = self.cat.cards;
       let tag;
       let filteredArray = [];
 
@@ -40,7 +38,7 @@ export default {
         return self.cat.cards;
       } 
       else {
-        myCard.forEach(card => {
+        myCards.forEach(card => {
           if(card.title.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card)) {
             filteredArray.push(card);
           }
@@ -51,12 +49,11 @@ export default {
             }
           }
         });
-      return filteredArray;
+        return filteredArray;
       }
     }
   }
 }
-
 </script>
 
 <style scoped>
@@ -68,6 +65,5 @@ export default {
   font-weight: 400;
   font-size:xx-large;
 }
-
 
 </style>
