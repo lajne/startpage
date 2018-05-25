@@ -2,16 +2,18 @@
   <div id="app">
     <NavBar />
     <SearchBar  v-model="searchTerm" />
-    <div class="container-fluid">
+    <loading v-if="$root.loading"></loading>
+      <div v-else class="container-fluid">
       <b-row>
         <div class="card-columns">
-          <Categories v-bind:searchTerm="searchTerm"
+          <Categories :searchTerm="searchTerm"
                       v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
+                      :key="index" 
+                      :cat="cat" 
+                      :title="cat.title" 
+                      :description="cat.description"
+          />
         </div>
       </b-row>
     </div>
@@ -30,49 +32,59 @@ export default {
     SearchBar,
     Categories
   },
+  mounted: function() {
+    this.loadPage();
+  },
   created: function () {
     this.getStartDef();
   },
-  data: function() {
-     return {
-       categories: [],
-       searchTerm: ""
-    }
-  },
+  data: () => ({
+      categories: [],
+      searchTerm: ""
+  }),
   methods: {
     getStartDef: function () {
       let self = this;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-      }, 500)
+      }, 100)
     },
+    loadPage: function () {
+
+    }
   },
   computed: {
     filter: function () {
       let self = this;
-      let filteredCategories = [];
-      if(this.searchTerm === "") {
-        return this.categories;
+      let filteredCategoriesByTitle = [];
+      let filteredCategoriesByTags = [];
+      if(self.searchTerm === "") {
+        return self.categories;
       }
       for(let cat of self.categories) {
-        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-        && !filteredCategories.includes(cat)) {
-          filteredCategories.push(cat);
+        if(cat.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
+        && !filteredCategoriesByTitle.includes(cat)) {
+          filteredCategoriesByTitle.push(cat);
         }
         for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat)
+          if(
+            link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
+            && !filteredCategoriesByTitle.includes(cat)
+          ){
+            filteredCategoriesByTitle.push(cat)
           }
           for(let tag of link.tags) {
-            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
-            && !filteredCategories.includes(cat)){
-              filteredCategories.push(cat);
+            if(
+              tag.toLowerCase().match(self.searchTerm.toLowerCase())
+              && !filteredCategoriesByTitle.includes(cat) 
+              && !filteredCategoriesByTags.includes(cat)
+            ){
+              filteredCategoriesByTags.push(cat);
             }
           }
         }
       }
-      return filteredCategories;
+      return filteredCategoriesByTitle.concat(filteredCategoriesByTags);
     }
   }
 }
@@ -91,5 +103,8 @@ export default {
   width: 100%;
   height: 100vh;
   padding: 70px 25px;
+}
+.card-columns {
+  width: 100%;
 }
 </style>
