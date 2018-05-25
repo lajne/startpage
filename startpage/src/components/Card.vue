@@ -2,7 +2,6 @@
 <b-col :class="colStyle">
   <div>
     <a href="#" v-b-tooltip.html.bottom :title="description">
-
       <b-card
         class="mt-1" 
         :style="styles"
