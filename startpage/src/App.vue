@@ -50,7 +50,7 @@ export default {
       setTimeout( () => {
         self.categories = loadedData.Categories;
         this.isLoading = false;
-      }, 2000)
+      }, 6000)
     },
   },
   computed: {

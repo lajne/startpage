@@ -1,21 +1,24 @@
 <template>
   <div id="loader">
-    <pacman-loader></pacman-loader>
+    <pacman-loader :color="color"></pacman-loader>
   </div>
 </template>
 
 <script>
 import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
-import "../assets/_variableOverride.scss";
 
 export default {
   components: {
     PacmanLoader
-  }
+  },
+  data: () => ({
+    color: 'grey'
+  }),
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 #loader{
   margin: 200px auto;
   width: 100px;
