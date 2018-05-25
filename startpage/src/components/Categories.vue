@@ -1,16 +1,26 @@
 <template>
   <b-card class="mt-2 animated fadeIn" id="b-card">
-    <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top :title="description">{{cat.title}}</div>
+    <div 
+      id="categoryHeaderStyle" 
+      slott="header" 
+      v-b-tooltip.html.top 
+      :title="description"
+    >
+      {{cat.title}}
+    </div>
     <b-row>
-      <Card  class="animated pulse" v-for="(card, index) in filteredCards" 
-              :key="index" 
-              :title="card.title" 
-              :col="card.col" 
-              :colStyle="card.colStyle"
-              :description="card.description" 
-              :shortDescription="card.shortDescription"
-              :imageUrl="card.imageUrl"
-              :styles="card.style" />
+      <Card  
+        class="animated pulse" 
+        v-for="(card, index) in filteredCards" 
+          :key="index" 
+          :title="card.title" 
+          :col="card.col" 
+          :colStyle="card.colStyle"
+          :description="card.description" 
+          :shortDescription="card.shortDescription"
+          :imageUrl="card.imageUrl"
+          :styles="card.style" 
+        />
     </b-row>
   </b-card>
 </template>

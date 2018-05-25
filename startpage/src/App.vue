@@ -6,13 +6,14 @@
       <div v-else class="container-fluid">
       <b-row>
         <div class="card-columns">
-          <Categories :searchTerm="searchTerm"
-                      v-if="filter.length > 0"
-                      v-for="(cat, index) in filter" 
-                      :key="index" 
-                      :cat="cat" 
-                      :title="cat.title" 
-                      :description="cat.description"
+          <Categories 
+            :searchTerm="searchTerm"
+            v-if="filter.length > 0"
+              v-for="(cat, index) in filter" 
+                :key="index" 
+                :cat="cat" 
+                :title="cat.title" 
+                :description="cat.description"
           />
         </div>
       </b-row>
