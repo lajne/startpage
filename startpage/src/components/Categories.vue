@@ -40,12 +40,18 @@ export default {
       } 
       else {
         myCards.forEach(card => {
-          if(card.title.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card)) {
+          if(
+            card.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
+            && !filteredArray.includes(card)
+          ) {
             filteredArray.push(card);
           }
           for(let i = 0; i < card.tags.length; i++) {
             tag = card.tags[i];
-            if( tag.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card) ){
+            if( 
+              tag.toLowerCase().match(self.searchTerm.toLowerCase()) 
+              && !filteredArray.includes(card) 
+            ){
               filteredArray.push(card);
             }
           }

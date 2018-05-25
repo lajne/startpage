@@ -2,11 +2,20 @@
 <b-col :class="'col-sm-' + col">
   <div>
     <a href="#" v-b-tooltip.html.bottom :title="description">
-      <b-card class="mt-1" :style="styles" text-variant="white">
+      <b-card 
+        class="mt-1" 
+        :style="styles" 
+        text-variant="white"
+      >
         <div class="card-body px-0 py-0">
           <blockquote class="mb-2">          
-            <p class="card-title mb-2"><icon :name="imageUrl"></icon>&nbsp;&nbsp;{{ title }}</p>
-            <footer class="white-text">{{ shortDescription }}</footer>
+            <p class="card-title mb-2">
+              <icon :name="imageUrl"></icon>
+              &nbsp;&nbsp;{{ title }}
+            </p>
+            <footer class="white-text">
+              {{ shortDescription }}
+            </footer>
           </blockquote>
         </div>
       </b-card>      
