@@ -1,5 +1,4 @@
 <template>
-<!-- <b-col :class="colStyle"> -->
 <b-col :class="'col-sm-' + col">
   <div>
     <a href="#" v-b-tooltip.html.bottom :title="description">
