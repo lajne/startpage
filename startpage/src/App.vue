@@ -5,13 +5,13 @@
     <div class="container-fluid">
       <b-row>
         <div class="card-columns">
-          <Categories v-bind:searchTerm="searchTerm"
+          <Categories :searchTerm="searchTerm"
                       v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"
+                      :key="index" 
+                      :cat="cat" 
+                      :title="cat.title" 
+                      :description="cat.description"
           />
         </div>
       </b-row>
@@ -34,12 +34,10 @@ export default {
   created: function () {
     this.getStartDef();
   },
-  data: function() {
-     return {
-       categories: [],
-       searchTerm: ""
-    }
-  },
+  data: () => ({
+      categories: [],
+      searchTerm: ""
+  }),
   methods: {
     getStartDef: function () {
       let self = this;
@@ -53,24 +51,24 @@ export default {
       let self = this;
       let filteredCategoriesByTitle = [];
       let filteredCategoriesByTags = [];
-      if(this.searchTerm === "") {
-        return this.categories;
+      if(self.searchTerm === "") {
+        return self.categories;
       }
       for(let cat of self.categories) {
-        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+        if(cat.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
         && !filteredCategoriesByTitle.includes(cat)) {
           filteredCategoriesByTitle.push(cat);
         }
         for(let link of cat.cards) {
           if(
-            link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+            link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
             && !filteredCategoriesByTitle.includes(cat)
           ){
             filteredCategoriesByTitle.push(cat)
           }
           for(let tag of link.tags) {
             if(
-              tag.toLowerCase().match(this.searchTerm.toLowerCase())
+              tag.toLowerCase().match(self.searchTerm.toLowerCase())
               && !filteredCategoriesByTitle.includes(cat) 
               && !filteredCategoriesByTags.includes(cat)
             ){
