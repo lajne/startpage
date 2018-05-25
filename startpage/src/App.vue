@@ -2,21 +2,18 @@
   <div id="app">
     <NavBar />
     <SearchBar  v-model="searchTerm" />
-    <div class="container-fluid">
+    <loading v-if="$root.loading"></loading>
+      <div v-else class="container-fluid">
       <b-row>
         <div class="card-columns">
-        <Categories v-bind:searchTerm="searchTerm"
+        <Categories :searchTerm="searchTerm"
                     v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
-                        v-bind:key="index" 
-                        v-bind:cat="cat" 
-                        v-bind:title="cat.title" 
-                        v-bind:description="cat.description"/>
-<<<<<<< HEAD
-        </div>
-=======
+                        :key="index" 
+                        :cat="cat" 
+                        :title="cat.title" 
+                        :description="cat.description"/>
       </div>
->>>>>>> cabe8468f8e5d414615fae2c76f1cbebef210add
       </b-row>
     </div>
   </div>
@@ -34,43 +31,47 @@ export default {
     SearchBar,
     Categories,
   },
+  mounted: function() {
+    this.loadPage();
+  },
   created: function () {
     this.getStartDef();
   },
-  data: function() {
-     return {
-       categories: [],
-       searchTerm: ""
-    }
-  },
+  data: () => ({
+    categories: [],
+    searchTerm: "",
+  }),
   methods: {
     getStartDef: function () {
       let self = this;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-      }, 500)
+      }, 100)
     },
+    loadPage: function () {
+
+    }
   },
   computed: {
     filter: function () {
       let self = this;
       let filteredCategories = [];
 
-      if(this.searchTerm === "") {
-        return this.categories;
+      if(self.searchTerm === "") {
+        return self.categories;
       }
       for(let cat of self.categories) {
-        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+        if(cat.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
         && !filteredCategories.includes(cat)) {
           filteredCategories.push(cat);
         }
         for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
+          if(link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
           && !filteredCategories.includes(cat)) {
             filteredCategories.push(cat)
           }
           for(let tag of link.tags) {
-            if(tag.toLowerCase().match(this.searchTerm.toLowerCase())
+            if(tag.toLowerCase().match(self.searchTerm.toLowerCase())
             && !filteredCategories.includes(cat)){
               filteredCategories.push(cat);
             }
@@ -79,48 +80,6 @@ export default {
       }
       return filteredCategories;
     }
-
-    // filter: function () {
-
-    //   let self = this;
-    //   let filteredCategories = [];
-
-      // let allCategories = self.categories;
-      // allCategories.forEach(element => {
-      //   console.log("in allCategories foreach", element);
-      //   let allCards = element.cards;
-      //   allCards.forEach(element => {
-      //     console.log("in the allCards foreach", allCards);
-      //     let allTags = element.tags;
-      //     console.log("all the cards TAGS", element.tags);
-      //   });
-      // });
-
-
-    //   if(this.searchTerm === "") {
-    //     console.log("in the filter function", this.categories);
-    //     return this.categories;
-    //   }
-
-    //   for(let cat of self.categories) {
-    //     if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-    //       && !filteredCategories.includes(cat)) {
-    //         filteredCategories.push(cat);
-    //     }
-    //     for(let link of cat.cards) {
-    //       if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-    //         && !filteredCategories.includes(cat)) {
-    //           filteredCategories.push(cat);
-    //       }
-    //     }
-        
-    //   }
-
-    //   return filteredCategories;
-
-
-
-    // }
   }
 }
 </script>
@@ -137,6 +96,9 @@ export default {
   width: 100%;
   height: 100vh;
   padding: 70px 25px;
+}
+.card-columns {
+  width: 100%;
 }
 </style>
 

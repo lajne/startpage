@@ -1,24 +1,18 @@
 <template>
-   
 
-<!-- <b-col class="col-12 col-sm-12 col-lg-6"> -->
   <b-card class="mt-2 animated fadeIn" id="b-card">
-    <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
+    <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top :title="description">{{cat.title}}</div>
     <b-row>
       <Card  class="animated pulse" v-for="(card, index) in filteredCards" 
-              v-bind:key="index" 
-              v-bind:title="card.title" 
-              v-bind:col="card.col" 
-              v-bind:colStyle="card.colStyle"
-              v-bind:description="card.description" 
-              v-bind:shortDescription="card.shortDescription"
-              v-bind:styles="card.style" />
-
+              :key="index" 
+              :title="card.title" 
+              :col="card.col" 
+              :colStyle="card.colStyle"
+              :description="card.description" 
+              :shortDescription="card.shortDescription"
+              :styles="card.style" />
     </b-row>
   </b-card>
-<!-- </b-col> -->
-
-
 
 </template>
 
@@ -42,8 +36,8 @@ export default {
       let tag;
       let filteredArray = [];
 
-      if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
-        return this.cat.cards;
+      if(self.cat.title.toLowerCase().match(self.searchTerm.toLowerCase())){
+        return self.cat.cards;
       } 
       else {
         myCard.forEach(card => {
