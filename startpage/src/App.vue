@@ -2,7 +2,6 @@
   <div id="app">
     <NavBar name="Startpage"/>
     <SearchBar v-model="searchTerm" />
-    <!-- <loading v-if="$root.loading"></loading> -->
     <Loading v-if="isLoading" />
       <div v-else class="container-fluid">
       <b-row>
@@ -71,6 +70,7 @@ export default {
           if(
             link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
             && !filteredCategoriesByTitle.includes(cat)
+            && !filteredCategoriesByTags.includes(cat)
           ){
             filteredCategoriesByTitle.push(cat)
           }

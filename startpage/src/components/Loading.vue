@@ -1,6 +1,6 @@
 <template>
   <div id="loader">
-    <pacman-loader :loading="loading" :color="color" :size="size"></pacman-loader>
+    <pacman-loader></pacman-loader>
   </div>
 </template>
 
@@ -11,10 +11,7 @@ import "../assets/_variableOverride.scss";
 export default {
   components: {
     PacmanLoader
-  },
-  data: () => ({
-    color: $accent
-  }),
+  }
 }
 </script>
 
