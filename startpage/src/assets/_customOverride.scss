@@ -1,13 +1,4 @@
-//Overrides
-$theme-colors: (
-  "primary": #7986CB,
-  "danger": #ff4136
-);
-
-//Custom created color used for accent colors on the site
-$accent: #7986CB;
-
-// override the default bootstrap setting for card-columns class
+// override the default bootstrap setting for card-columns class.
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 1;

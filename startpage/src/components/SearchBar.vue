@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style  lang="scss" scoped>
-@import "../assets/_custom.scss";
+@import "../assets/_variableOverride.scss";
 #searchInput {
   background-color: #ffffff;
   padding-left: 8px;

@@ -79,9 +79,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "assets/_variableOverride.scss";
 @import "~bootstrap/scss/bootstrap.scss";
-@import "assets/_custom.scss";
-
+@import "assets/_customOverride.scss";
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 @import '~mdbootstrap/css/mdb.css';
 
