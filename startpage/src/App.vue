@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <NavBar />
-    <SearchBar  v-model="searchTerm" />
-    <loading v-if="$root.loading"></loading>
+    <NavBar name="Startpage"/>
+    <SearchBar v-model="searchTerm" />
+    <!-- <loading v-if="$root.loading"></loading> -->
+    <Loading v-if="isLoading" />
       <div v-else class="container-fluid">
       <b-row>
         <div class="card-columns">
@@ -25,34 +26,33 @@
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
+import Loading from './components/Loading.vue'
 import loadedData from './data.JSON'
 export default {
   name: 'app',
   components: {
     NavBar,
     SearchBar,
-    Categories
-  },
-  mounted: function() {
-    this.loadPage();
+    Categories,
+    Loading
   },
   created: function () {
     this.getStartDef();
   },
   data: () => ({
       categories: [],
-      searchTerm: ""
+      searchTerm: "",
+      isLoading: false
   }),
   methods: {
     getStartDef: function () {
       let self = this;
+      this.isLoading = true;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-      }, 100)
+        this.isLoading = false;
+      }, 2000)
     },
-    loadPage: function () {
-
-    }
   },
   computed: {
     filter: function () {
