@@ -2,7 +2,8 @@
   <div id="app">
     <NavBar />
     <SearchBar  v-model="searchTerm" />
-    <div class="container-fluid">
+    <loading v-if="$root.loading"></loading>
+      <div v-else class="container-fluid">
       <b-row>
         <div class="card-columns">
           <Categories :searchTerm="searchTerm"
@@ -31,6 +32,9 @@ export default {
     SearchBar,
     Categories
   },
+  mounted: function() {
+    this.loadPage();
+  },
   created: function () {
     this.getStartDef();
   },
@@ -43,8 +47,11 @@ export default {
       let self = this;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-      }, 500)
+      }, 100)
     },
+    loadPage: function () {
+
+    }
   },
   computed: {
     filter: function () {
@@ -97,7 +104,7 @@ export default {
   padding: 70px 25px;
 }
 .card-columns {
-  width: 100%
+  width: 100%;
 }
 </style>
 
