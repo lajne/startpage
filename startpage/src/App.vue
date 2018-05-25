@@ -51,7 +51,7 @@ export default {
       setTimeout( () => {
         self.categories = loadedData.Categories;
         this.isLoading = false;
-      }, 2000)
+      }, 6000)
     },
   },
   computed: {
@@ -71,6 +71,7 @@ export default {
           if(
             link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
             && !filteredCategoriesByTitle.includes(cat)
+            && !filteredCategoriesByTags.includes(cat)
           ){
             filteredCategoriesByTitle.push(cat)
           }
