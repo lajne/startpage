@@ -110,7 +110,7 @@
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": [ "webdav" ]
+        "tags": [ "webdav", "forsheda", "airsoft", "bonde" ]
       },
       {
         "title": "Mattias Jarl",
@@ -263,6 +263,36 @@
           "tags": ["microsoft", "corporate", "ugly"]
       }
       ]
+  },
+  {
+    "title": "Countries",
+    "description": "Some contries",
+    "cards": [
+    {
+      "title": "Sweden",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["microsoft", "corporate", "ugly"]
+    },
+    {
+      "title": "USA",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["sunny", "tip", "big"]
+    }
+    ]
   }
   ]
   }

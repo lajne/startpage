@@ -1,11 +1,11 @@
 <template>
-<b-col v-bind:class="'col-sm-' + col">
+<b-col :class="'col-sm-' + col">
   <div>
-    <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
-      <b-card class="mt-1" v-bind:style="styles" text-variant="white">
+    <a href="#" v-b-tooltip.html.bottom :title="description">
+      <b-card class="mt-1" :style="styles" text-variant="white">
         <div class="card-body px-0 py-0">
           <blockquote class="mb-2">          
-            <p class="card-title mb-2"><icon v-bind:name="imageUrl"></icon>&nbsp;&nbsp;{{ title }}</p>
+            <p class="card-title mb-2"><icon :name="imageUrl"></icon>&nbsp;&nbsp;{{ title }}</p>
             <footer class="white-text">{{ shortDescription }}</footer>
           </blockquote>
         </div>
@@ -28,7 +28,6 @@ export default {
     URL: String,
     imageUrl: String,
     col: Number,
-    colStyle: String,
     styles: {}
   }
 }
