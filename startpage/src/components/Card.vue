@@ -27,7 +27,7 @@ export default {
     description: String,
     URL: String,
     imageUrl: String,
-    colStyle: String,
+    col: Number,
     styles: {}
   }
 }
