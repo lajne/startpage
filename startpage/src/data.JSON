@@ -273,10 +273,10 @@
       "shortDescription": "Good weather",
       "description": "Best country in the world",
       "URL": "#",
-      "imageUrl": "music",
+      "imageUrl": "flag",
       "col": 12,
       "style": {
-        "backgroundColor": "#FF7043"
+        "backgroundColor": "#4CAF50"
       },
       "tags": ["microsoft", "corporate", "ugly"]
     },
@@ -285,10 +285,10 @@
       "shortDescription": "Good weather",
       "description": "Best country in the world",
       "URL": "#",
-      "imageUrl": "music",
+      "imageUrl": "flag",
       "col": 12,
       "style": {
-        "backgroundColor": "#FF7043"
+        "backgroundColor": "#4CAF50"
       },
       "tags": ["sunny", "tip", "big"]
     }
