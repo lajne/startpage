@@ -66,4 +66,5 @@ export default {
   font-weight: 400;
   font-size:xx-large;
 }
+
 </style>
