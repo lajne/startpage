@@ -1,10 +1,11 @@
 <template>
   <div id="app">
+    
     <NavBar />
     <SearchBar  v-model="searchTerm" />
     <div class="container-fluid">
       <b-row>
-        <div class="card-columns">
+        <div id="bootstrap-overrides" class="card-columns">
           <Categories v-bind:searchTerm="searchTerm"
                       v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
@@ -91,7 +92,21 @@ export default {
   height: 100vh;
   padding: 70px 25px;
 }
-.card-columns {
-  width: 100%;
-}
+
+
+  #bootstrap-overrides .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+
 </style>
