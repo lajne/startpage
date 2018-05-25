@@ -273,7 +273,7 @@
       "shortDescription": "Good weather",
       "description": "Best country in the world",
       "URL": "#",
-      "imageUrl": "#",
+      "imageUrl": "music",
       "col": 12,
       "style": {
         "backgroundColor": "#FF7043"
@@ -285,7 +285,7 @@
       "shortDescription": "Good weather",
       "description": "Best country in the world",
       "URL": "#",
-      "imageUrl": "#",
+      "imageUrl": "music",
       "col": 12,
       "style": {
         "backgroundColor": "#FF7043"
