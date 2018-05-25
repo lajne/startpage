@@ -1,5 +1,5 @@
 <template>
-<b-col v-bind:class="colStyle">
+<b-col v-bind:class="'col-sm-' + col">
   <div>
     <a href="#" v-b-tooltip.html.bottom v-bind:title="description">
       <b-card class="mt-1" v-bind:style="styles" text-variant="white">
