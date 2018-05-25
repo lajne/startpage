@@ -15,7 +15,6 @@ Vue.component('icon', Icon);
 import 'vue-material-design-icons/styles.css';
 import 'vue2-animate/dist/vue2-animate.min.css';
 
-
 Vue.config.productionTip = false
 
 new Vue({

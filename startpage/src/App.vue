@@ -2,18 +2,19 @@
   <div id="app">
     <NavBar />
     <SearchBar  v-model="searchTerm" />
-    <div class="container-fluid">
+    <loading v-if="$root.loading"></loading>
+      <div v-else class="container-fluid">
       <b-row>
         <div class="card-columns">
-          <Categories v-bind:searchTerm="searchTerm"
-                      v-if="filter.length > 0"
+        <Categories :searchTerm="searchTerm"
+                    v-if="filter.length > 0"
                       v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"
-          />
-        </div>
+                        :key="index" 
+                        :cat="cat" 
+                        :title="cat.title" 
+                        :description="cat.description"/>
+      </div>
+
       </b-row>
     </div>
   </div>
@@ -31,22 +32,26 @@ export default {
     SearchBar,
     Categories
   },
+  mounted: function() {
+    this.loadPage();
+  },
   created: function () {
     this.getStartDef();
   },
-  data: function() {
-     return {
-       categories: [],
-       searchTerm: ""
-    }
-  },
+  data: () => ({
+    categories: [],
+    searchTerm: "",
+  }),
   methods: {
     getStartDef: function () {
       let self = this;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-      }, 500)
+      }, 100)
     },
+    loadPage: function () {
+
+    }
   },
   computed: {
     filter: function () {
@@ -99,7 +104,7 @@ export default {
   padding: 70px 25px;
 }
 .card-columns {
-  width: 100%
+  width: 100%;
 }
 </style>
 
