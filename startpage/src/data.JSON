@@ -9,9 +9,8 @@
           "shortDescription": "Everything about computers.",
           "description": "Computer stuff and a lot more text",
           "URL": "#",
-          "imageUrl": "",
+          "imageUrl": "laptop",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
           },
@@ -22,9 +21,8 @@
           "shortDescription": "Who does internet better than us? Hint: no one.",
           "description": "Try restarting the router..",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "globe",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#00897b"
           },
@@ -35,9 +33,8 @@
         "shortDescription": "See what we have to offer in our wide range of mobile phones.",
         "description": "You can't have an iPhone..",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "mobile-alt",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#00897b"
         },
@@ -54,9 +51,8 @@
           "shortDescription": "Talk to our experts about your problems.",
           "description": "Do you want to talk about it?",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "hand-holding-heart",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
             "backgroundColor": "#2196F3"
           },
@@ -73,9 +69,8 @@
           "shortDescription": "Long hair",
           "description": "Bodafors",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "hand-spock",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#ef5350"
           },
@@ -86,9 +81,8 @@
         "shortDescription": "Made in USA",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "hand-peace",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -99,9 +93,8 @@
         "shortDescription": "Cool",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "chess-knight",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -112,9 +105,8 @@
         "shortDescription": "Forsheda",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "bed",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -125,9 +117,8 @@
         "shortDescription": "Many kids",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "gamepad",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
@@ -144,9 +135,8 @@
           "shortDescription": "Yo",
           "description": "Best MOBA",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "magic",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -157,9 +147,8 @@
           "shortDescription": "Classic is always best. Eller?",
           "description": "Best FPS ever",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "gamepad",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -170,9 +159,8 @@
           "shortDescription": "R.I.P",
           "description": "Best FPS ever",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "fighter-jet",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
@@ -189,9 +177,8 @@
           "shortDescription": "Best OS",
           "description": "Amazing Amazing Amazing Amazing",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "power-off",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
               "backgroundColor": "#AB47BC"
           },
@@ -202,9 +189,8 @@
           "shortDescription": "Difficult",
           "description": "A really good OS",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "power-off",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#AB47BC"
           },
@@ -215,9 +201,8 @@
           "shortDescription": "Terrible",
           "description": "Locked down system with an outdated terminal",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "power-off",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#AB47BC"
           },
@@ -234,9 +219,8 @@
           "shortDescription": "The clock is ticking, keep track here.",
           "description": "Time sheet",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "clock",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
               "backgroundColor": "#FF7043"
           },
@@ -247,9 +231,8 @@
           "shortDescription": "Notification of sickness and return to duty.",
           "description": "A good thing to do",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "calendar-alt",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -260,9 +243,8 @@
           "shortDescription": "Keep track of vacation days.",
           "description": "Mix things up",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "ship",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#FF7043"
           },
@@ -273,15 +255,45 @@
           "shortDescription": "Here you can find your payslip.",
           "description": "Money tracking",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "money-bill-alt",
           "col": 6,
-          "colStyle": "col-sm-6",
+          
           "style": {
             "backgroundColor": "#FF7043"
           },
           "tags": ["microsoft", "corporate", "ugly"]
       }
       ]
+  },
+  {
+    "title": "Countries",
+    "description": "Some contries",
+    "cards": [
+    {
+      "title": "Sweden",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["microsoft", "corporate", "ugly"]
+    },
+    {
+      "title": "USA",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "#",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["sunny", "tip", "big"]
+    }
+    ]
   }
   ]
   }
