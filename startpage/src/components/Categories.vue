@@ -9,6 +9,7 @@
               :colStyle="card.colStyle"
               :description="card.description" 
               :shortDescription="card.shortDescription"
+              :imageUrl="card.imageUrl"
               :styles="card.style" />
     </b-row>
   </b-card>
