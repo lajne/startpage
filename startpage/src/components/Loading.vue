@@ -13,7 +13,7 @@ export default {
     PacmanLoader
   },
   data: () => ({
-    color: $accent
+    color: $accent,
   }),
 }
 </script>

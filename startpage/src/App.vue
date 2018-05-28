@@ -71,15 +71,16 @@ export default {
           if(
             link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
             && !filteredCategoriesByTitle.includes(cat)
+            && !filteredCategoriesByTags.includes(cat)
           ){
             filteredCategoriesByTitle.push(cat)
           }
           for(let tag of link.tags) {
-            if(
-              tag.toLowerCase().match(self.searchTerm.toLowerCase())
+            if(tag.toLowerCase().match(self.searchTerm.toLowerCase())
               && !filteredCategoriesByTitle.includes(cat) 
               && !filteredCategoriesByTags.includes(cat)
             ){
+              console.log("tagmatch, men inte i filterby tags eller cattitle", cat.title);
               filteredCategoriesByTags.push(cat);
             }
           }
