@@ -1,30 +1,32 @@
 <template>
   <div id="app">
-    <NavBar />
-    <SearchBar  v-model="searchTerm" />
-    <div class="container-fluid">
-      <!-- <p> {{ filteredCategories }} {{ filteredLinks }} </p> -->
+    <NavBar name="Startpage"/>
+    <SearchBar v-model="searchTerm" />
+    <!-- <loading v-if="$root.loading"></loading> -->
+    <Loading v-if="isLoading" />
+      <div v-else class="container-fluid">
       <b-row>
-        <Categories v-bind:searchTerm="searchTerm"
-                    v-for="(cat, index) in filter" 
-                      v-bind:key="index" 
-                      v-bind:cat="cat" 
-                      v-bind:title="cat.title" 
-                      v-bind:description="cat.description"/>
+        <div class="card-columns">
+          <Categories 
+            :searchTerm="searchTerm"
+            v-if="filter.length > 0"
+              v-for="(cat, index) in filter" 
+                :key="index" 
+                :cat="cat" 
+                :title="cat.title" 
+                :description="cat.description"
+          />
+        </div>
       </b-row>
     </div>
   </div>
 </template>
 
 <script>
-// här i app.vue ha en funktion som loopar igenom länkarna till 
-// kategorierna så vi har koll på dem redan här.
-// så kollar vi om den här kategorin om det innehåller det här sökordet.
-// eller innehåller den här länken det här sökordet.
-
 import NavBar from './components/NavBar.vue'
 import SearchBar from './components/SearchBar.vue'
 import Categories from './components/Categories.vue'
+import Loading from './components/Loading.vue'
 import loadedData from './data.JSON'
 export default {
   name: 'app',
@@ -32,61 +34,70 @@ export default {
     NavBar,
     SearchBar,
     Categories,
+    Loading
   },
   created: function () {
     this.getStartDef();
   },
-  data: function() {
-     return {
-       categories: [],
-       searchTerm: ""
-     }
-  },
+  data: () => ({
+      categories: [],
+      searchTerm: "",
+      isLoading: false
+  }),
   methods: {
     getStartDef: function () {
       let self = this;
+      this.isLoading = true;
       setTimeout( () => {
         self.categories = loadedData.Categories;
-      }, 500)
+        this.isLoading = false;
+      }, 6000)
     },
   },
   computed: {
     filter: function () {
       let self = this;
-      let filteredCategories = [];
-
-      if(this.searchTerm === "") {
-        return this.categories;
+      let filteredCategoriesByTitle = [];
+      let filteredCategoriesByTags = [];
+      if(self.searchTerm === "") {
+        return self.categories;
       }
       for(let cat of self.categories) {
-        if(cat.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-          && !filteredCategories.includes(cat)) {
-            filteredCategories.push(cat);
+        if(cat.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
+        && !filteredCategoriesByTitle.includes(cat)) {
+          filteredCategoriesByTitle.push(cat);
         }
         for(let link of cat.cards) {
-          if(link.title.toLowerCase().match(this.searchTerm.toLowerCase()) 
-            && !filteredCategories.includes(cat)) {
-              filteredCategories.push(cat)
+          if(
+            link.title.toLowerCase().match(self.searchTerm.toLowerCase()) 
+            && !filteredCategoriesByTitle.includes(cat)
+            && !filteredCategoriesByTags.includes(cat)
+          ){
+            filteredCategoriesByTitle.push(cat)
+          }
+          for(let tag of link.tags) {
+            if(
+              tag.toLowerCase().match(self.searchTerm.toLowerCase())
+              && !filteredCategoriesByTitle.includes(cat) 
+              && !filteredCategoriesByTags.includes(cat)
+            ){
+              filteredCategoriesByTags.push(cat);
+            }
           }
         }
       }
-      return filteredCategories;
+      return filteredCategoriesByTitle.concat(filteredCategoriesByTags);
     }
   }
 }
 </script>
 
 <style lang="scss">
-// @import 'bootstrap/dist/css/bootstrap.css';
-// @import '~bootstrap-vue/dist/bootstrap-vue.css';
-// @import 'mdbootstrap/css/mdb.css';
-@import "assets/_custom.scss";
+@import "assets/_variableOverride.scss";
 @import "~bootstrap/scss/bootstrap.scss";
+@import "assets/_customOverride.scss";
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 @import '~mdbootstrap/css/mdb.css';
-// @import "~bootstrap/scss/bootstrap.scss";
-// @import "~mdbootstrap/scss/mdb.scss";
-
 
 #app {
   background-color: #f5f5f5;
@@ -95,6 +106,7 @@ export default {
   height: 100vh;
   padding: 70px 25px;
 }
+.card-columns {
+  width: 100%;
+}
 </style>
-
-

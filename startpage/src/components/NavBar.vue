@@ -4,8 +4,7 @@
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#">
     <web-icon />
-    <!-- <img src="https://placekitten.com/g/30/30" alt="Super Site">&nbsp;&nbsp; -->
-    Startpage
+    {{Name}}
   </b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
     <!-- Right aligned nav items (class='ml-auto') -->
@@ -25,7 +24,7 @@ export default {
       
     },
     props: {
-      
+      Name: String
     }
     
 }

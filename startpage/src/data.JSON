@@ -6,43 +6,40 @@
       "cards": [
       {
           "title": "Computer",
-          "short-description": "Computer stuff",
+          "shortDescription": "Everything about computers.",
           "description": "Computer stuff and a lot more text",
           "URL": "#",
-          "imageUrl": "",
-          "col": 4,
-          "colStyle": "col-sm-4",
+          "imageUrl": "laptop",
+          "col": 6,
           "style": {
             "backgroundColor": "#00897b"
           },
-          "tags": ["Computer", "IT"]
-      },
-      { 
-          "title": "Mobile",
-          "short-description": "Mobile stuff",
-          "description": "You can't have an iPhone..",
-          "URL": "#",
-          "imageUrl": "#",
-          "col": 4,
-          "colStyle": "col-sm-4",
-          "style": {
-            "backgroundColor": "#00897b"
-          },
-          "tags": ["Mobile", "IT", "iPhone"]
+          "tags": [ "computer", "it" ]
       },
       {
           "title": "Internet",
-          "short-description": "Internet stuff",
+          "shortDescription": "Who does internet better than us? Hint: no one.",
           "description": "Try restarting the router..",
           "URL": "#",
-          "imageUrl": "#",
-          "col": 4,
-          "colStyle": "col-sm-4",
+          "imageUrl": "globe",
+          "col": 6,
           "style": {
             "backgroundColor": "#00897b"
           },
           "tags": ["Web", "wifi"]
-      }
+      },
+      { 
+        "title": "Mobile",
+        "shortDescription": "See what we have to offer in our wide range of mobile phones.",
+        "description": "You can't have an iPhone..",
+        "URL": "#",
+        "imageUrl": "mobile-alt",
+        "col": 12,
+        "style": {
+          "backgroundColor": "#00897b"
+        },
+        "tags": ["Mobile", "IT", "iPhone"]
+    }
       ]
   },
   {
@@ -51,16 +48,15 @@
       "cards": [
       {
           "title": "Feelings",
-          "short-description": "Feelings stuff",
+          "shortDescription": "Talk to our experts about your problems.",
           "description": "Do you want to talk about it?",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "hand-holding-heart",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
             "backgroundColor": "#2196F3"
           },
-          "tags": ["red"]
+          "tags": [ "red" ]
       }
       ]
   },
@@ -70,68 +66,63 @@
       "cards": [
       {
           "title": "Alexander Linné",
-          "short-description": "Long hair",
+          "shortDescription": "Long hair",
           "description": "Bodafors",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "hand-spock",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#ef5350"
           },
-          "tags": ["Bodafors"]
+          "tags": [ "Bodafors" ]
       },
       {
         "title": "Mallory Fraiche",
-        "short-description": "Made in USA",
+        "shortDescription": "Made in USA",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "hand-peace",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["USA"]
+        "tags": [ "USA" ]
       },
       {
         "title": "Daniel Tabacskó",
-        "short-description": "Cool",
+        "shortDescription": "Cool",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "chess-knight",
         "col": 12,
-        "colStyle": "col-sm-12",
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["Anderstorp", "blonde", "amazing"]
+        "tags": [ "Anderstorp", "blonde", "amazing" ]
     },
       {
         "title": "Timmie Bark",
-        "short-description": "Forsheda",
+        "shortDescription": "Forsheda",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "bed",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["webdav"]
+        "tags": [ "webdav", "forsheda", "airsoft", "bonde" ]
       },
       {
         "title": "Mattias Jarl",
-        "short-description": "Many kids",
+        "shortDescription": "Many kids",
         "description": "Amazing",
         "URL": "#",
-        "imageUrl": "#",
+        "imageUrl": "gamepad",
         "col": 6,
-        "colStyle": "col-sm-6",
         "style": {
           "backgroundColor": "#ef5350"
         },
-        "tags": ["NHL"]
+        "tags": [ "NHL" ]
       }
       ]
   },
@@ -141,42 +132,39 @@
       "cards": [
       {
           "title": "League of Legends",
-          "Short-description": "yo",
+          "shortDescription": "Yo",
           "description": "Best MOBA",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "magic",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": ["Moba"]
+          "tags": [ "Moba" ]
       },
       {
           "title": "Super Mario Brothers",
-          "Short-description": "Old",
+          "shortDescription": "Classic is always best. Eller?",
           "description": "Best FPS ever",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "gamepad",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": ["Game"]
+          "tags": [ "Game" ]
       },
       {
           "title": "Call of Duty 4",
-          "short-description": "R.I.P",
+          "shortDescription": "R.I.P",
           "description": "Best FPS ever",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "fighter-jet",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
             "backgroundColor": "#283593"
           },
-          "tags": ["2007"]
+          "tags": [ "2007" ]
       }
       ]
   },
@@ -186,44 +174,125 @@
       "cards": [
       {
           "title": "Mac OS",
-          "short-description": "Best OS",
+          "shortDescription": "Best OS",
           "description": "Amazing Amazing Amazing Amazing",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "power-off",
           "col": 12,
-          "colStyle": "col-sm-12",
           "style": {
               "backgroundColor": "#AB47BC"
+          },
+          "tags": [ "nice", "beautiful", "nix" ]
+      },
+      {
+          "title": "Linux",
+          "shortDescription": "Difficult",
+          "description": "A really good OS",
+          "URL": "#",
+          "imageUrl": "power-off",
+          "col": 6,
+          "style": {
+            "backgroundColor": "#AB47BC"
+          },
+          "tags": [ "customize, nix" ]
+      },
+      {
+          "title": "Windows",
+          "shortDescription": "Terrible",
+          "description": "Locked down system with an outdated terminal",
+          "URL": "#",
+          "imageUrl": "power-off",
+          "col": 6,
+          "style": {
+            "backgroundColor": "#AB47BC"
+          },
+          "tags": [ "microsoft", "corporate", "ugly" ]
+      }
+      ]
+  },
+  {
+      "title": "Time reporting",
+      "description": "Time is precious",
+      "cards": [
+      {
+          "title": "Time",
+          "shortDescription": "The clock is ticking, keep track here.",
+          "description": "Time sheet",
+          "URL": "#",
+          "imageUrl": "clock",
+          "col": 6,
+          "style": {
+              "backgroundColor": "#FF7043"
           },
           "tags": ["nice", "beautiful", "nix"]
       },
       {
-          "title": "Linux",
-          "short-description": "difficult",
-          "description": "A really good OS",
+          "title": "Report sick absence",
+          "shortDescription": "Notification of sickness and return to duty.",
+          "description": "A good thing to do",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "calendar-alt",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#AB47BC"
+            "backgroundColor": "#FF7043"
           },
           "tags": ["customize, nix"]
       },
       {
-          "title": "Windows",
-          "short-description": "terrible",
-          "description": "Locked down system with an outdated terminal",
+          "title": "Vacation",
+          "shortDescription": "Keep track of vacation days.",
+          "description": "Mix things up",
           "URL": "#",
-          "imageUrl": "#",
+          "imageUrl": "ship",
           "col": 6,
-          "colStyle": "col-sm-6",
           "style": {
-            "backgroundColor": "#AB47BC"
+            "backgroundColor": "#FF7043"
+          },
+          "tags": ["microsoft", "corporate", "ugly"]
+      },
+      {
+          "title": "Paystub",
+          "shortDescription": "Here you can find your payslip.",
+          "description": "Money tracking",
+          "URL": "#",
+          "imageUrl": "money-bill-alt",
+          "col": 6,
+          "style": {
+            "backgroundColor": "#FF7043"
           },
           "tags": ["microsoft", "corporate", "ugly"]
       }
       ]
+  },
+  {
+    "title": "Countries",
+    "description": "Some contries",
+    "cards": [
+    {
+      "title": "Sweden",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "music",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["microsoft", "corporate", "ugly"]
+    },
+    {
+      "title": "USA",
+      "shortDescription": "Good weather",
+      "description": "Best country in the world",
+      "URL": "#",
+      "imageUrl": "music",
+      "col": 12,
+      "style": {
+        "backgroundColor": "#FF7043"
+      },
+      "tags": ["sunny", "tip", "big"]
+    }
+    ]
   }
   ]
   }

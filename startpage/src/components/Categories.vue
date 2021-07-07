@@ -1,19 +1,28 @@
 <template>
-<b-col class="col-12 col-sm-12 col-lg-6">
-    <!-- animated slideInUp -->
-    <b-card class="mt-4 animated fadeIn" id="b-card">
-      <div id="categoryHeaderStyle" slott="header" v-b-tooltip.html.top v-bind:title="description">{{cat.title}}</div>
-      <b-row class="justify-content-between">
-        <Card  class="animated pulse" v-for="(card, index) in filteredCards" 
-              v-bind:key="index" 
-              v-bind:title="card.title" 
-              v-bind:col="card.col" 
-              v-bind:colStyle="card.colStyle"
-              v-bind:description="card.description" 
-              v-bind:styles="card.style" />
-      </b-row>
-    </b-card>
-</b-col>
+  <b-card class="mt-2 animated fadeIn" id="b-card">
+    <div 
+      id="categoryHeaderStyle" 
+      slott="header" 
+      v-b-tooltip.html.top 
+      :title="description"
+    >
+      {{cat.title}}
+    </div>
+    <b-row>
+      <Card  
+        class="animated pulse" 
+        v-for="(card, index) in filteredCards" 
+          :key="index" 
+          :title="card.title" 
+          :col="card.col" 
+          :colStyle="card.colStyle"
+          :description="card.description" 
+          :shortDescription="card.shortDescription"
+          :imageUrl="card.imageUrl"
+          :styles="card.style" 
+        />
+    </b-row>
+  </b-card>
 </template>
 
 <script>
@@ -27,22 +36,31 @@ export default {
     title: String,
     description: String,
     cat: Object,
-    searchTerm: String
+    searchTerm: String,
   },
   computed: {
     filteredCards: function () {
-      if(this.cat.title.toLowerCase().match(this.searchTerm.toLowerCase())){
-        return this.cat.cards;
+      let self = this;
+      let myCards = self.cat.cards;
+      let tag;
+      let filteredArray = [];
+
+      if(self.cat.title.toLowerCase().match(self.searchTerm.toLowerCase())){
+        return self.cat.cards;
       } 
-      // else if(this.cat.tags.toLowerCase().match(this.searchTerm.toLowerCase())) {
-      //   return this.cat.cards.filter((card) => {
-      //     return card.tags.toLowerCase().match(this.searchTerm.toLowerCase());
-      //   });
-      // }
       else {
-        return this.cat.cards.filter((card) => {
-          return card.title.toLowerCase().match(this.searchTerm.toLowerCase());
+        myCards.forEach(card => {
+          if(card.title.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card)) {
+            filteredArray.push(card);
+          }
+          for(let i = 0; i < card.tags.length; i++) {
+            tag = card.tags[i];
+            if( tag.toLowerCase().match(self.searchTerm.toLowerCase()) && !filteredArray.includes(card) ){
+              filteredArray.push(card);
+            }
+          }
         });
+        return filteredArray;
       }
     }
   }
@@ -58,6 +76,5 @@ export default {
   font-weight: 400;
   font-size:xx-large;
 }
-
 
 </style>
